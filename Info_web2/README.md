@@ -51,4 +51,4 @@ Je ne m'y connait pas en en html, je vais donc probablement suivre la recommenda
 
 ### Maquette/apparence
 
-Voici la maquette qui montre ce à quoi le site va probablement ressembler : ...
+Voici la maquette qui montre ce à quoi le site va probablement ressembler : (je n'ai pas réussi à mettre l'image) (désolé)
