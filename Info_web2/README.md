@@ -25,7 +25,7 @@ J'ai décidé de faire ce site sur le thème de mon travail de maturité, qui s'
 ### Structure du code
 
 Je ne m'y connait pas en en html, je vais donc probablement suivre la recommendation pour la structure du code, c'est-à-dire celle-là :
-              
+
                 |/
                 |_ contenu/
                 |     |_ page1.html
