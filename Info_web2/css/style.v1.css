@@ -1,0 +1,40 @@
+body {
+    font-family:Arial, Helvetica, sans-serif
+}
+
+h1, h2, h3 {
+    color:  #00c852;
+}
+
+h1 {
+    text-align: center;
+    background-color:rgb(218, 253, 218);
+    border-radius: 10px;
+    border: rgb(2, 107, 0) solid 3px;
+    padding: 10px 10px 10px 10px; /*en haut, en bas, droite?*, ?*/
+}
+
+h2 {
+    text-align: center;
+    border:rgb(2, 107, 0) solid 3px;
+    width: fit-content;
+    padding: 5px;
+    
+}
+
+    /*background-color: rgb(233, 242, 249);
+    border-radius: 10px; */
+
+    /*background-color: #00c852;
+    border-radius: 10px;
+    border-left: #13b3a0 solid 5px; */
+
+p {
+    padding: 10px 10px 10px 10px; /*en haut, en bas, droite?*, ?/
+    margin: 10px 10px 10px 20px;
+    line-height: 25px; /*espace entre lignes?*/
+}
+
+.important > strong {
+    text-decoration: underline solid;
+}
