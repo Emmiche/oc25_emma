@@ -1,0 +1,16 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3 {
+    color:  #00c852;
+}
+
+h1 {
+    text-align: center;
+    background-color:rgb(218, 253, 218);
+    border-radius: 10px;
+    border: rgb(2, 107, 0) solid 3px;
+    padding: 10px 10px 10px 10px; /*en haut, en bas, droite?*, ?*/
+}
+

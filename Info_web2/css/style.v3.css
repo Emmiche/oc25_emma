@@ -21,3 +21,10 @@ p {
     line-height: 25px; /*espace entre lignes?*/
 }
 
+h1 {
+    text-align: center;
+    background-color:rgb(218, 253, 218);
+    border-radius: 10px;
+    border: rgb(2, 107, 0) solid 3px;
+    padding: 10px 10px 10px 10px; /*en haut, en bas, droite?*, ?*/
+}
