@@ -1,0 +1,51 @@
+body {
+    /* border: solid 1px green; */
+    max-width: 600px; /*largeur maximale limité à 600px (du body?) */
+    margin-left: auto; /*centrer*/ /*on peut utiliser juste margin  je crois?*/
+    margin-right: auto; /*centrer*/
+    /* pour que le site soit "beau à regarder" sur telephone et tablette, il faut utiliser padding*/
+    /* margin c'est l'écart entre le border et la "couche extérieur"?*/
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+
+h1, h2, p {
+    /* border: solid 1px orange; */
+}
+
+#navigation {
+    background-color: lightgrey;
+    padding-top: 5px;
+    padding-bottom: 5px; /*agrandi zone grise*/
+}
+
+#navigation ul {
+    /* border: solid 1px blue; */
+    width: fit-content; /* demander!*/
+    padding-left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* espace entre navigation et li fait que ... éléments descendants*/
+#navigation li {
+    display: inline; /* ??*/
+    /* border: solid 1px red; */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+img.img-centre { /*image = element line donc si rajoute image sera à coté et non en dessous si element bloc*/
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+img.img-float { /* adaptation de l'image si on rattrécie fenêtre ?*/
+    width: 150px;
+    float: left;
+    margin-right: 10px;
+}
