@@ -5,7 +5,7 @@ const ctx_statut = statut.getContext("2d"); // const est comme var c'est une var
 
 
 ctx_statut.fillStyle = "green";
-ctx_statut.fillRect(0, 0, 300, 300);
+ctx_statut.fillRect(0, 0, 300, 300); 
 
 const dessin = document.getElementById("dessin");
 const context = dessin.getContext("2d");

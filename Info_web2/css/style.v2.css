@@ -1,5 +1,7 @@
 body {
     font-family:Arial, Helvetica, sans-serif;
+    background-image: url("/oc25_emma/Info_web2/images/forest-pixel-background-d-video-game-daytime-green-grass-fir-trees-clouds-nature-seamless-landscape-vector-illustration-302415843.webp");
+    background-size: cover; /* couvre tout le fond ?*/
 }
 
 h1, h2, h3 {

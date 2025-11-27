@@ -11,9 +11,9 @@ body {
 
 
 
-h1, h2, p {
-    /* border: solid 1px orange; */
-}
+/*h1, h2, p {
+    border: solid 1px orange; 
+} */
 
 #navigation {
     background-color: lightgrey;
