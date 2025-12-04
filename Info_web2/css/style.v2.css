@@ -1,7 +1,28 @@
 body {
     font-family:Arial, Helvetica, sans-serif;
-    background-image: url("/oc25_emma/Info_web2/images/forest-pixel-background-d-video-game-daytime-green-grass-fir-trees-clouds-nature-seamless-landscape-vector-illustration-302415843.webp");
+    background-image: url("images/pixeledforest.webp");
     background-size: cover; /* couvre tout le fond ?*/
+}
+
+#navigation {
+    background-color: rgb(218, 253, 218);
+    padding-top: 5px;
+    padding-bottom: 5px; /*agrandi zone grise*/
+}
+
+#navigation ul {
+    /* border: solid 1px blue; */
+    width: fit-content; /* demander!*/
+    padding-left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* espace entre navigation et li fait que ... éléments descendants*/
+#navigation li {
+    display: inline; /* ??*/
+    /* border: solid 1px red; */
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 h1, h2, h3 {

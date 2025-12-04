@@ -2,6 +2,27 @@ body {
     font-family:Arial, Helvetica, sans-serif
 }
 
+#navigation {
+    background-color: rgb(218, 253, 218);
+    padding-top: 5px;
+    padding-bottom: 5px; /*agrandi zone grise*/
+}
+
+#navigation ul {
+    /* border: solid 1px blue; */
+    width: fit-content; /* demander!*/
+    padding-left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* espace entre navigation et li fait que ... éléments descendants*/
+#navigation li {
+    display: inline; /* ??*/
+    /* border: solid 1px red; */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 h1, h2, h3 {
     color: #00c852;
 }
