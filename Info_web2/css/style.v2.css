@@ -1,6 +1,6 @@
 body {
     font-family:Arial, Helvetica, sans-serif;
-    background-image: url("/Info_web2/images/pixeledforest.webp");
+    background-image: url("images/pixeledforest.webp");
     background-size: cover; /* couvre tout le fond ?*/
 }
 
@@ -35,5 +35,14 @@ h1 {
     border-radius: 10px;
     border: rgb(2, 107, 0) solid 3px;
     padding: 10px 10px 10px 10px; /*en haut, en bas, droite?*, ?*/
+}
+
+#image {
+    width: 500px;
+    height: 300px;
+    display: block;
+    margin-left: 250px;
+    margin-top: 320px;
+    margin-bottom: 10px;
 }
 

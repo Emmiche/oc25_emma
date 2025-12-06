@@ -70,3 +70,9 @@ h1 {
     border-left: green solid 5px;
 }
 
+img.img-float { /* adaptation de l'image si on rattrécie fenêtre ?*/
+    width: 150px;
+    float: left;
+    margin-right: 10px;
+}
+
