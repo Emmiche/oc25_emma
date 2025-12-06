@@ -3,7 +3,7 @@ body {
 }
 
 #navigation {
-    background-color: rgb(218, 253, 218);
+    background-color: rgb(115, 204, 115);
     padding-top: 5px;
     padding-bottom: 5px; /*agrandi zone grise*/
 }
@@ -35,11 +35,24 @@ h1 {
     padding: 10px 10px 10px 10px; /*en haut, en bas, droite?*, ?*/
 }
 
-ul {
+/*ul {
+    background-color: #00c852;
+    border-radius: 10px;
+    border-left: green solid 5px;
+}*/
+
+#vision_cap {
     background-color: #00c852;
     border-radius: 10px;
     border-left: green solid 5px;
 }
+
+#vision_nature {
+    background-color: #00c852;
+    border-radius: 10px;
+    border-left: green solid 5px;
+}
+
 p {
     padding: 10px 10px 10px 10px; /*en haut, en bas, droite?, ?*/
     margin: 10px 10px 10px 20px;

@@ -3,7 +3,7 @@ body {
 }
 
 #navigation {
-    background-color: rgb(218, 253, 218);
+    background-color: rgb(115, 204, 115);
     padding-top: 5px;
     padding-bottom: 5px; /*agrandi zone grise*/
 }
@@ -37,6 +37,7 @@ h1 {
 
 h2 {
     text-align: center;
+    background-color:rgb(218, 253, 218);
     border:rgb(2, 107, 0) solid 3px;
     width: fit-content;
     padding: 5px;
