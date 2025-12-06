@@ -21,7 +21,7 @@ var x = 1; //donner position de départ ?
 var y = 1; //donner position de départ ?
 
 function init() {
-    img_donut.src="/oc25_emma/Info_web2/images/donuts-cake-svgrepo-com.svg";
+    img_donut.src="images/donuts-cake-svgrepo-com.svg";
     window.requestAnimationFrame(draw); //demander ce qu'il se passe là, fonction appelée constamment?
 }
 
