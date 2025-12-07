@@ -40,7 +40,7 @@ h1 {
 p {
     padding: 10px 10px 10px 10px; /*en haut, en bas, droite?, ?*/
     margin: 10px 10px 10px 20px;
-    line-height: 25px; /*espace entre lignes?*/
+    line-height: 20px; /*espace entre lignes?*/
 }
 
 h1 {

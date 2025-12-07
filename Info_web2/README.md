@@ -7,6 +7,7 @@ Dans ce projet, nous devons faire un site web.
 Le cahier des charge décrit à quoi le site doit ressembler en terme de contenu, style et organisation.
 
 Le cahier des charge comprend des éléments imposés :
+
 - Le site web doit contenir au minimum quatre pages dans quatre fichiers HTML différents, dont une page d’accueil.
 - La page d’accueil doit présenter le sujet traiter et offrir au visiteur une table des matières du site web avec un lien vers les pages correspondantes et une brève description du contenu.
 - Il doit y avoir une barre de navigation pour naviguer entre les quatre pages.
@@ -18,7 +19,7 @@ Le cahier des charge comprend des éléments imposés :
 - Le code doit être sur GitHub est être déployé sur le web avec GitHub Pages.
 - La page doit pouvoir s’adapter aux petits écrans (smartphone).
 
-### Thème 
+### Thème
 
 J'ai décidé de faire ce site sur le thème de mon travail de maturité, qui s'intitule : Les jeux vidéo comme leviers de sensibilisation aux enjeux environnementaux : l'exemple de la forêt numérique.
 
