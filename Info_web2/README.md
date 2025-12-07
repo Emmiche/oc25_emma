@@ -209,6 +209,7 @@ Voici un schéma (pas complet) de comment j'ai organisé tous mes fichiers (HTML
 
 Voici la maquette de mon idée de départ :
 ![maquette_ideedepart_info](https://github.com/user-attachments/assets/a9ffbca0-fc8a-491b-ac05-0c77369b5603)
+Dans la version finale, certaines choses ne sont plus là, tandis que d'autres sont restées ou ont été modifiées. La majorité des idées sont tout de même restées.
 
 
 ### Difficultés
