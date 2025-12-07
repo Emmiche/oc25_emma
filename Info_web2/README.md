@@ -22,8 +22,10 @@ Le cahier des charge comprend des éléments imposés :
     </ul>
 </div>
 ````
-En CSS:
+
 ````
+/* En CSS */
+
 #navigation {
     background-color: rgb(115, 204, 115);
     padding-top: 5px;
