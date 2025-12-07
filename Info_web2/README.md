@@ -170,32 +170,36 @@ J'ai décidé de faire ce site sur le thème de mon travail de maturité, qui s'
 
 ### Structure du code
 
-Je ne m'y connait pas en en html, je vais donc probablement suivre la recommendation pour la structure du code, c'est-à-dire celle-là :
+Voici un schéma (pas complet + pas dans le bon ordre) de comment j'ai organisé tous mes fichiers (HTML, CSS, JS, et autres) :
 
                 |/
                 |_ contenu/
                 |     |_ page1.html
                 |     |_ page2.html
                 |     |_ page3.html
-                |    
+                |     |_ page4.html
+                |     |...
+                | 
                 |_ css/
-                |     |_style.css
+                |     |_style.v1.css
+                |     |_style.v2.css
+                |     |_style.v3.css
+                |     |_style.v4.css
+                |     |...
                 |
                 |_ js/
-                |    |_animation.js
-                |    |_fonctions.js
+                |    |_animationamourforet.js
+                |    |...
+                |    
                 |
                 |_ images/
-                |        |_ image1.png
-                |        |_ image2.jpg
-                |
-                |_ fonts/
-                |       |_ fontx-Regular.tff
-                |       |_ fontx-Bold.tff
-                |
-                |_ index.html 
+                         |_ image1.png
+                         |_ image2.jpg
+                         | ...
+                
 
- Voici un schéma de la strucutre html :              
+
+ Voici un schéma d'unde strucutre html :              
 ![structurehtml](https://github.com/user-attachments/assets/c9321fcf-1f6d-4b49-a140-c797ca1a9562)
 
 
