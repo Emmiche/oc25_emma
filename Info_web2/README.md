@@ -44,8 +44,6 @@ Le cahier des charge comprend des éléments imposés :
     padding: 15px; /*espace entre le contenu et la bordure */
     margin: 20px; /* espace autour du cadre ?*/
     background-color: #f9f9f9; 
-    /*gap: 10px;*/ /*espace entre les images ?*/
-    /*display: flex;*/
     /*float: left;*/
 }
 ````
