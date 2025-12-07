@@ -196,11 +196,13 @@ Je ne m'y connait pas en en html, je vais donc probablement suivre la recommenda
                 |_ index.html 
 
                
+![structurehtml](https://github.com/user-attachments/assets/c9321fcf-1f6d-4b49-a140-c797ca1a9562)
 
-(images/strucutrehtml.jpg)
+
 
 ### Maquette/apparence
 
 Voici la maquette qui montre ce à quoi le site va probablement ressembler :
+![maquette_ideedepart_info](https://github.com/user-attachments/assets/a9ffbca0-fc8a-491b-ac05-0c77369b5603)
 
-(images/maquette_ideedepart_info.jpg)
+
