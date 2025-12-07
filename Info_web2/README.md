@@ -8,8 +8,32 @@ Le cahier des charge décrit à quoi le site doit ressembler en terme de contenu
 
 Le cahier des charge comprend des éléments imposés :
 
-- Le site web doit contenir au minimum quatre pages dans quatre fichiers HTML différents, dont une page d’accueil.
-- La page d’accueil doit présenter le sujet traiter et offrir au visiteur une table des matières du site web avec un lien vers les pages correspondantes et une brève description du contenu.
+- Le site web doit contenir au minimum quatre pages dans quatre fichiers HTML différents, dont une page d’accueil : page1.html, page2.html, page3.html, page4.html.
+- La page d’accueil doit présenter le sujet traiter et offrir au visiteur une table des matières du site web avec un lien vers les pages correspondantes et une brève description du contenu :
+````
+ <h2>Table des matières</h2>
+
+<div class="cadre-groupe">
+    <p>
+        <a href="page2.html">
+            <img class="img-float" src="images/middleforestpixel.jpg"  width="200">
+            L'importance des forêts
+        </a>
+        
+        <br>
+        <a href="page3.html">
+            <img class="img-float" src="images/colorful-gaming-accessories.jpg"  width="200">
+            Les jeux vidéo
+        </a>
+
+        <br>
+        <a href="page4.html">
+            <img class="img-float" src="images/analysis.png"  width="200">
+            Analyse et conclusion
+        </a>
+    </p>
+</div>
+````
 - Il doit y avoir une barre de navigation pour naviguer entre les quatre pages:
   En HTML:
   ````
