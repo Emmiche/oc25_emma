@@ -50,6 +50,10 @@ Je ne m'y connait pas en en html, je vais donc probablement suivre la recommenda
                 |
                 |_ index.html      
 
+(images/strucutrehtml.jpg)
+
 ### Maquette/apparence
 
-Voici la maquette qui montre ce à quoi le site va probablement ressembler : (je n'ai pas réussi à mettre l'image) (désolé)
+Voici la maquette qui montre ce à quoi le site va probablement ressembler :
+
+(images/maquette_ideedepart_info.jpg)

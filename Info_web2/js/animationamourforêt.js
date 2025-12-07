@@ -17,7 +17,7 @@ const dy = 0; // se déplace uniquement horizontalement
 var x = 250; //donner position de départ ?
 var y = 250; //donner position de départ ?
 
-function init() {
+function init() { // de l'initialisation ? Configure ? Defini ?
     img_arbretrois.src="images/arbretrois.svg";
     img_arbrepine.src="images/arbrepine.svg";
     img_sapin.src="images/sapin.svg";
@@ -30,7 +30,8 @@ function init() {
 
 
 function draw() { //redessiner ... demander!
-    ctx_image.clearRect(0, 0, 500, 500);
+    // Efface canvas ?
+    ctx_image.clearRect(0, 0, canvasSizeX, canvasSizeY);
 
     if (x > canvasSizeX) {
         ctx_image.translate(-canvasSizeX, -canvasSizeY);
@@ -51,7 +52,7 @@ function draw() { //redessiner ... demander!
     if (x > canvasSizeX) {
         // On "téléporte" le monde à gauche
         ctx_image.translate(-x, 0);
-        x = 0;
+        x = 0; // Ne fonctionne pas très bien
     }
     }
     window.requestAnimationFrame(draw); //toutes les secondes draw est rappelé
