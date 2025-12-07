@@ -170,32 +170,33 @@ J'ai décidé de faire ce site sur le thème de mon travail de maturité, qui s'
 
 ### Structure du code
 
-Voici un schéma (pas complet + pas dans le bon ordre) de comment j'ai organisé tous mes fichiers (HTML, CSS, JS, et autres) :
+Voici un schéma (pas complet) de comment j'ai organisé tous mes fichiers (HTML, CSS, JS, et autres) :
 
                 |/
-                |_ contenu/
-                |     |_ page1.html
-                |     |_ page2.html
-                |     |_ page3.html
-                |     |_ page4.html
-                |     |...
-                | 
                 |_ css/
                 |     |_style.v1.css
                 |     |_style.v2.css
                 |     |_style.v3.css
                 |     |_style.v4.css
                 |     |...
+                |  
+                |_ images/
+                |     |_ analysis.png
+                |     |_ arbrepine.svg
+                |     | ...
                 |
                 |_ js/
                 |    |_animationamourforet.js
                 |    |...
-                |    
                 |
-                |_ images/
-                         |_ image1.png
-                         |_ image2.jpg
-                         | ...
+                |_ contenu/
+                      |_ page1.html
+                      |_ page2.html
+                      |_ page3.html
+                      |_ page4.html
+                      |...
+
+
                 
 
 
@@ -209,4 +210,8 @@ Voici un schéma (pas complet + pas dans le bon ordre) de comment j'ai organisé
 Voici la maquette de mon idée de départ :
 ![maquette_ideedepart_info](https://github.com/user-attachments/assets/a9ffbca0-fc8a-491b-ac05-0c77369b5603)
 
+
+### Difficultés
+
+L'animation était vraiment dure, même à la fin je n'ai pas réussi à le faire correctement. Pour arriver à quelque chose, j'ai du particulièrement persévérer.
 
