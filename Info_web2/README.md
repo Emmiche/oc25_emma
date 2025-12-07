@@ -116,8 +116,8 @@ function draw() { //redessiner ... demander!
 
 init()
 ````
-- Le code doit être sur GitHub est être déployé sur le web avec GitHub Pages.
-- La page doit pouvoir s’adapter aux petits écrans (smartphone).
+- Le code doit être sur GitHub est être déployé sur le web avec GitHub Pages : emmiche.github.io/oc25_emma/Info_web2/page1.html
+- La page doit pouvoir s’adapter aux petits écrans (smartphone) (adaptation du texte à côté des images dans CSS avec float: left;)
 
 ### Thème
 
