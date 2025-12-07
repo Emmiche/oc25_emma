@@ -9,8 +9,9 @@ Le cahier des charge décrit à quoi le site doit ressembler en terme de contenu
 Le cahier des charge comprend des éléments imposés :
 
 - Le site web doit contenir au minimum quatre pages dans quatre fichiers HTML différents, dont une page d’accueil : page1.html, page2.html, page3.html, page4.html.
-- La page d’accueil doit présenter le sujet traiter et offrir au visiteur une table des matières du site web avec un lien vers les pages correspondantes et une brève description du contenu :
+- La page d’accueil doit présenter le sujet traiter et offrir au visiteur une table des matières du site web avec un lien vers les pages correspondantes et une brève description du contenu. Voici le code pour la table des matières:
 ````
+<!--En HTML-->
  <h2>Table des matières</h2>
 
 <div class="cadre-groupe">
@@ -34,6 +35,20 @@ Le cahier des charge comprend des éléments imposés :
     </p>
 </div>
 ````
+
+````
+/* En CSS */
+.cadre-groupe {
+    border: 2px solid rgb(2, 107, 0); /* bordure 2 pixels, style plein, même couleur verte qu'autre cadre*/
+    padding: 15px; /*espace entre le contenu et la bordure */
+    margin: 20px; /* espace autour du cadre ?*/
+    background-color: #f9f9f9; 
+    /*gap: 10px;*/ /*espace entre les images ?*/
+    /*display: flex;*/
+    /*float: left;*/
+}
+````
+
 - Il doit y avoir une barre de navigation pour naviguer entre les quatre pages:
   En HTML:
   ````
@@ -74,8 +89,8 @@ Le cahier des charge comprend des éléments imposés :
 - Chaque page doit contenir au moins 100 mots.
 - Le sujet traité doit être liés aux STIM et le contenu (texte, images, équations, code, animations, etc.) doit être cohérent, pertinent et maîtrisé par l’élève.
 - La page web doit contenir soit des équations, soit du code informatique, soit un formulaire dynamique.
-- Le site web doit être stylé avec une feuille CSS.
-- Il doit y avoir une animation réalisée avec canvas.
+- Le site web doit être stylé avec une feuille CSS. Chaque page en a une : style.v1.css, style.v2.css, style.v3.css, style.v4.css. 
+- Il doit y avoir une animation réalisée avec canvas (en javascript).
   Exemple:
 ````
 const canvas_image = document.getElementById("image");
@@ -141,7 +156,7 @@ function draw() { //redessiner ... demander!
 init()
 ````
 - Le code doit être sur GitHub est être déployé sur le web avec GitHub Pages : emmiche.github.io/oc25_emma/Info_web2/page1.html
-- La page doit pouvoir s’adapter aux petits écrans (smartphone) (adaptation du texte à côté des images dans CSS avec float: left;)
+- La page doit pouvoir s’adapter aux petits écrans (smartphone) (adaptation du texte à côté des images dans CSS avec float: left;).
 
 ### Thème
 
@@ -172,7 +187,9 @@ Je ne m'y connait pas en en html, je vais donc probablement suivre la recommenda
                 |       |_ fontx-Regular.tff
                 |       |_ fontx-Bold.tff
                 |
-                |_ index.html      
+                |_ index.html 
+
+               
 
 ### Maquette/apparence
 
