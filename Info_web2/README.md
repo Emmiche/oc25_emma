@@ -10,7 +10,40 @@ Le cahier des charge comprend des éléments imposés :
 
 - Le site web doit contenir au minimum quatre pages dans quatre fichiers HTML différents, dont une page d’accueil.
 - La page d’accueil doit présenter le sujet traiter et offrir au visiteur une table des matières du site web avec un lien vers les pages correspondantes et une brève description du contenu.
-- Il doit y avoir une barre de navigation pour naviguer entre les quatre pages.
+- Il doit y avoir une barre de navigation pour naviguer entre les quatre pages:
+  ````
+  <div id="navigation">
+    <ul>
+        <li><a href="page1.html">Acceuil</a></li>
+        <li><a href="page2.html">L'importance des forêts</a></li>
+        <li><a href="page3.html">Les jeux vidéo</a></li>
+        <li><a href="page4.html">Analyse et conclusion</a></li>
+    </ul>
+</div>
+````
+
+````
+#navigation {
+    background-color: rgb(115, 204, 115);
+    padding-top: 5px;
+    padding-bottom: 5px; /*agrandi zone grise*/
+}
+
+#navigation ul {
+    /* border: solid 1px blue; */
+    width: fit-content; /* demander!*/
+    padding-left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* espace entre navigation et li fait que ... éléments descendants*/
+#navigation li {
+    display: inline; /* ??*/
+    /* border: solid 1px red; */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+````
 - Chaque page doit contenir au moins 100 mots.
 - Le sujet traité doit être liés aux STIM et le contenu (texte, images, équations, code, animations, etc.) doit être cohérent, pertinent et maîtrisé par l’élève.
 - La page web doit contenir soit des équations, soit du code informatique, soit un formulaire dynamique.
