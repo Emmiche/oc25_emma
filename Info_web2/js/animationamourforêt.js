@@ -8,11 +8,17 @@ const img_sapin = new Image();
 const img_coeur = new Image();
 
 // Canvas
-const canvasSizeX = 500;
-const canvasSizeY = 200;
+const canvasSizeX = 750;
+const canvasSizeY = 150;
+
+// Taille réelle du canvas ?
+canvas_image.width = 750;
+canvas_image.height = 150;
+
 // Vitesse
 const dx = 1; //se déplace de 1 à l'horizontal
 const dy = 0; // se déplace uniquement horizontalement
+
 // Position ?
 var x = 250; //donner position de départ ?
 var y = 250; //donner position de départ ?
@@ -52,7 +58,7 @@ function draw() { //redessiner ... demander!
     if (x > canvasSizeX) {
         // On "téléporte" le monde à gauche
         ctx_image.translate(-x, 0);
-        x = 0; // Ne fonctionne pas très bien
+        x = 0; 
     }
     }
     window.requestAnimationFrame(draw); //toutes les secondes draw est rappelé

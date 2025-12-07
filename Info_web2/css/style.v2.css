@@ -25,24 +25,44 @@ body {
     margin-right: 20px;
 }
 
-h1, h2, h3 {
-    color:  #00c852;
-}
-
 h1 {
     text-align: center;
+    color:  #00c852;
     background-color:rgb(218, 253, 218);
     border-radius: 10px;
     border: rgb(2, 107, 0) solid 3px;
     padding: 10px 10px 10px 10px; /*en haut, en bas, droite?*, ?*/
 }
 
+h2 {
+    text-align: center;
+    text-decoration: underline solid; /*souligne*/
+    color:  #185632;
+}
+
+p {
+    padding: 10px 10px 10px 10px; /*en haut, en bas, droite?, ?*/
+    margin: 10px 10px 10px 20px;
+    line-height: 20px; /*espace entre lignes?*/
+}
+
+#definition_foret {
+    border: 2px solid rgb(2, 107, 0); /* bordure 2 pixels, style plein, même couleur verte qu'autre cadre*/
+    padding: 15px; /*espace entre le contenu et la bordure */
+    margin: 20px; /* espace autour du cadre ?*/
+    background-color: #f9f9f9;
+}
+
 #image {
-    width: 500px;
-    height: 300px;
-    display: block;
-    margin-left: 250px;
-    margin-top: 320px;
+    width: 700px;
+    height: 150px;
+    display: block; /* Force un espace entre l'élément d'avant et l'élément d'après? Occupe toute la largeur dispo? Ressemble à div? */
+    margin-left: 200px;
+    margin-top: 170px;
     margin-bottom: 10px;
 }
 
+canvas {
+    border: 4px solid black; 
+    background-color: #f9f9f9; 
+}
