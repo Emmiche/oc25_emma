@@ -10,6 +10,7 @@ Le cahier des charge comprend des éléments imposés :
 
 - Le site web doit contenir au minimum quatre pages dans quatre fichiers HTML différents, dont une page d’accueil : page1.html, page2.html, page3.html, page4.html.
 - La page d’accueil doit présenter le sujet traiter et offrir au visiteur une table des matières du site web avec un lien vers les pages correspondantes et une brève description du contenu. Voici le code pour la table des matières:
+
 ````
 <!--En HTML-->
  <h2>Table des matières</h2>
@@ -51,7 +52,8 @@ Le cahier des charge comprend des éléments imposés :
 
 - Il doit y avoir une barre de navigation pour naviguer entre les quatre pages:
   En HTML:
-  ````
+
+ ````
   <div id="navigation">
     <ul>
         <li><a href="page1.html">Acceuil</a></li>
@@ -59,6 +61,7 @@ Le cahier des charge comprend des éléments imposés :
         <li><a href="page3.html">Les jeux vidéo</a></li>
         <li><a href="page4.html">Analyse et conclusion</a></li>
     </ul>
+
 </div>
 ````
 
@@ -86,12 +89,14 @@ Le cahier des charge comprend des éléments imposés :
     margin-right: 20px;
 }
 ````
+
 - Chaque page doit contenir au moins 100 mots.
 - Le sujet traité doit être liés aux STIM et le contenu (texte, images, équations, code, animations, etc.) doit être cohérent, pertinent et maîtrisé par l’élève.
 - La page web doit contenir soit des équations, soit du code informatique, soit un formulaire dynamique.
-- Le site web doit être stylé avec une feuille CSS. Chaque page en a une : style.v1.css, style.v2.css, style.v3.css, style.v4.css. 
+- Le site web doit être stylé avec une feuille CSS. Chaque page en a une : style.v1.css, style.v2.css, style.v3.css, style.v4.css.
 - Il doit y avoir une animation réalisée avec canvas (en javascript).
   Exemple:
+
 ````
 const canvas_image = document.getElementById("image");
 const ctx_image = canvas_image.getContext("2d");
@@ -155,6 +160,7 @@ function draw() { //redessiner ... demander!
 
 init()
 ````
+
 - Le code doit être sur GitHub est être déployé sur le web avec GitHub Pages : emmiche.github.io/oc25_emma/Info_web2/page1.html
 - La page doit pouvoir s’adapter aux petits écrans (smartphone) (adaptation du texte à côté des images dans CSS avec float: left;).
 
