@@ -11,6 +11,7 @@ Le cahier des charge comprend des éléments imposés :
 - Le site web doit contenir au minimum quatre pages dans quatre fichiers HTML différents, dont une page d’accueil.
 - La page d’accueil doit présenter le sujet traiter et offrir au visiteur une table des matières du site web avec un lien vers les pages correspondantes et une brève description du contenu.
 - Il doit y avoir une barre de navigation pour naviguer entre les quatre pages:
+  En HTML:
   ````
   <div id="navigation">
     <ul>
@@ -21,7 +22,7 @@ Le cahier des charge comprend des éléments imposés :
     </ul>
 </div>
 ````
-
+En CSS:
 ````
 #navigation {
     background-color: rgb(115, 204, 115);
