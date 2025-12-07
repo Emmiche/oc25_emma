@@ -17,6 +17,7 @@ Le cahier des charge comprend des éléments imposés :
 - Le site web doit être stylé avec une feuille CSS.
 - Il doit y avoir une animation réalisée avec canvas.
   Exemple:
+````
 const canvas_image = document.getElementById("image");
 const ctx_image = canvas_image.getContext("2d");
 
@@ -77,7 +78,8 @@ function draw() { //redessiner ... demander!
     window.requestAnimationFrame(draw); //toutes les secondes draw est rappelé
 }
 
-init() 
+init()
+````
 - Le code doit être sur GitHub est être déployé sur le web avec GitHub Pages.
 - La page doit pouvoir s’adapter aux petits écrans (smartphone).
 
