@@ -75,3 +75,7 @@ p {
     align-items: center;
     margin-bottom: 20px; /*espace entre les blocs ?*/
 }
+
+/* padding crée un espace intérieur entre le contenu d'un élément et sa bordure ?
+border est la ligne qui entoure cet espace interne (ligne décorative)? séparant le contenu du margin (espace extérieur?)
+*/

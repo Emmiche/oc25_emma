@@ -51,6 +51,7 @@ h1 {
     padding: 10px 10px 10px 10px; /*en haut, en bas, droite?*, ?*/
 }
 
+/* Du mettre beaucoup d'id différents car sinon ma barre de navigation était touchée aussi avec les ul et li*/
 
 #titre_animal { 
     background-color: #00c852;
