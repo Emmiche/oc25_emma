@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dnuw1th3tk101" path="res://mob.tscn" id="2_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://c4d1kx38no5gq" path="res://player.tscn" id="3_lquwl"]
 [ext_resource type="PackedScene" uid="uid://cquh1347aykup" path="res://hud.tscn" id="4_lquwl"]
-[ext_resource type="Script" path="res://hud.gd" id="5_7mycd"]
+[ext_resource type="Script" uid="uid://pnln8ybu8b5q" path="res://hud.gd" id="5_7mycd"]
 
 [sub_resource type="Curve2D" id="Curve2D_7mycd"]
 _data = {
