@@ -11,8 +11,12 @@ config_version=5
 [application]
 
 config/name="Nouveau projet de jeu"
+<<<<<<< Updated upstream
 run/main_scene="uid://mikxdny2ixy6"
 config/features=PackedStringArray("4.4", "Forward Plus")
+=======
+config/features=PackedStringArray("4.5", "Forward Plus")
+>>>>>>> Stashed changes
 config/icon="res://icon.svg"
 
 [display]
