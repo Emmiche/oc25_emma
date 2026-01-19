@@ -1,5 +1,6 @@
 63f7b34db8d8cdea90c76aacccf841ec
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ::res://::1768841528
 hud.gd::GDScript::-1::1768834110::0::1::::<>CanvasLayer<><>0<>0<><>::
 hud.tscn::PackedScene::5937623387174829535::1768834197::0::1::::<><><>0<>0<><>::uid://bbcbl7jm78pkx::::res://fonts/Xolonium-Regular.ttf
@@ -7,16 +8,22 @@ icon.svg::CompressedTexture2D::2179398373488926028::1768658218::1768834197::1:::
 main.gd::GDScript::6718986809637115753::1768834110::0::1::::<>Node<><>0<>0<><>::
 main.tscn::PackedScene::859429567655725019::1768834110::0::1::::<><><>0<>0<><>::uid://c2yyy4fdg0hw0::::res://main.gd<>uid://dnuw1th3tk101::::res://mob.tscn<>uid://c4d1kx38no5gq::::res://player.tscn
 =======
+=======
+>>>>>>> Stashed changes
 ::res://::1768658993
 icon.svg::CompressedTexture2D::2179398373488926028::1768658218::1768658994::1::::<><><>0<>0<>d7868926c395abe7551a38d01be2f677<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 main.gd::GDScript::6718986809637115753::1768658218::0::1::::<>Node<><>0<>0<><>::
 main.tscn::PackedScene::859429567655725019::1768658218::0::1::::<><><>0<>0<><>::uid://c2yyy4fdg0hw0::::res://main.gd<>uid://dnuw1th3tk101::::res://mob.tscn<>uid://c4d1kx38no5gq::::res://player.tscn
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 mob.gd::GDScript::3509819688525989581::1768658218::0::1::::<>RigidBody2D<><>0<>0<><>::
 mob.tscn::PackedScene::8114387787992599060::1768658218::0::1::::<><><>0<>0<><>::uid://bqaghnn17i02t::::res://mob.gd<>uid://c4bny57vctm4d::::res://art/enemyFlyingAlt_1.png<>uid://dsv1u05uyadr1::::res://art/enemyFlyingAlt_2.png<>uid://bkqoqylxia7pp::::res://art/enemySwimming_1.png<>uid://cq0mgcuweasnj::::res://art/enemySwimming_2.png<>uid://dtq3xr7kuqjr4::::res://art/enemyWalking_1.png<>uid://bu0iy8ow2bcxc::::res://art/enemyWalking_2.png
 player.gd::GDScript::1151533526805651959::1768658218::0::1::::<>Area2D<><>0<>0<><>::
 player.tscn::PackedScene::6816108718711201076::1768658218::0::1::::<><><>0<>0<><>::uid://xepqo77oy7jb::::res://art/playerGrey_up1.png<>uid://qn2ua254ayyx::::res://player.gd<>uid://bxlleg4h0yu3e::::res://art/playerGrey_up2.png<>uid://dblon7y7ei1ch::::res://art/playerGrey_walk1.png<>uid://deitw03syt2ri::::res://art/playerGrey_walk2.png
 README.md::TextFile::-1::1768658218::0::1::::<><><>0<>0<><>::
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 ::res://art/::1768834197
 enemyFlyingAlt_1.png::CompressedTexture2D::6811216016694706405::1768658218::1768834197::1::::<><><>0<>0<>705ea61c6d776caf9513861939fff99a<>res://.godot/imported/enemyFlyingAlt_1.png-559f599b16c69b112c1b53f6332e9489.ctex::
@@ -36,6 +43,8 @@ FONTLOG.txt::TextFile::-1::1768658218::0::1::::<><><>0<>0<><>::
 LICENSE.txt::TextFile::-1::1768658218::0::1::::<><><>0<>0<><>::
 Xolonium-Regular.ttf::FontFile::2460820338804720239::1768658218::1768834197::1::::<><><>0<>0<>0f0819c4793903483465079a008b3fbb<>res://.godot/imported/Xolonium-Regular.ttf-bc2981e3069cff4c34dd7c8e2bb73fba.fontdata::
 =======
+=======
+>>>>>>> Stashed changes
 ::res://art/::1768658281
 enemyFlyingAlt_1.png::CompressedTexture2D::6811216016694706405::1768658218::1768658994::1::::<><><>0<>0<>705ea61c6d776caf9513861939fff99a<>res://.godot/imported/enemyFlyingAlt_1.png-559f599b16c69b112c1b53f6332e9489.ctex::
 enemyFlyingAlt_2.png::CompressedTexture2D::8467628887457838056::1768658218::1768658994::1::::<><><>0<>0<>94150cf756cabf1204fef834da553d07<>res://.godot/imported/enemyFlyingAlt_2.png-31dc7310eda6e1b721224f3cd932c076.ctex::
@@ -53,4 +62,7 @@ playerGrey_walk2.png::CompressedTexture2D::7457726715181346958::1768658218::1768
 FONTLOG.txt::TextFile::-1::1768658218::0::1::::<><><>0<>0<><>::
 LICENSE.txt::TextFile::-1::1768658218::0::1::::<><><>0<>0<><>::
 Xolonium-Regular.ttf::FontFile::2460820338804720239::1768658218::1768658994::1::::<><><>0<>0<>0f0819c4793903483465079a008b3fbb<>res://.godot/imported/Xolonium-Regular.ttf-bc2981e3069cff4c34dd7c8e2bb73fba.fontdata::
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
