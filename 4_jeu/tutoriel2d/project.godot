@@ -10,8 +10,12 @@ config_version=5
 
 [application]
 
+<<<<<<< HEAD
 config/name="Nouveau projet de jeu"
 run/main_scene="uid://mikxdny2ixy6"
+=======
+config/name="Dodge_the_Creeps_2D"
+>>>>>>> 2d769676abbe0bbff9e9ec896e45ef4ac62c74e4
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
