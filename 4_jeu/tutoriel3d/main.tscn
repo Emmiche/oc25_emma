@@ -1,8 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://2wap0283yk0r"]
+[gd_scene load_steps=12 format=3 uid="uid://2wap0283yk0r"]
 
 [ext_resource type="Script" uid="uid://djq0w7546fhec" path="res://main.gd" id="1_h2yge"]
 [ext_resource type="PackedScene" uid="uid://4jpvou887jf0" path="res://player.tscn" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://bhiiwdkl11u5n" path="res://mob.tscn" id="2_1bvp3"]
+[ext_resource type="FontFile" uid="uid://cyxhh7ddkn62q" path="res://fonts/Montserrat-Medium.ttf" id="4_lquwl"]
+[ext_resource type="Script" uid="uid://c2c68k5503p2m" path="res://score_label.gd" id="5_7mycd"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7dm0k"]
 size = Vector3(60, 2, 60)
@@ -23,6 +25,10 @@ _data = {
 "tilts": PackedFloat32Array(0, 0, 0, 0)
 }
 point_count = 4
+
+[sub_resource type="Theme" id="Theme_272bh"]
+default_font = ExtResource("4_lquwl")
+default_font_size = 22
 
 [node name="Main" type="Node"]
 script = ExtResource("1_h2yge")
@@ -76,10 +82,56 @@ mesh = SubResource("CylinderMesh_7mycd")
 curve = SubResource("Curve3D_272bh")
 
 [node name="SpawnLocation" type="PathFollow3D" parent="SpawnPath"]
-transform = Transform3D(-0.9999902, -3.4743912e-06, 0.0043634344, -2.2737361e-13, 0.9999997, 0.0007962512, -0.004363435, 0.0007962436, -0.99999017, -13.232793, 0.011608124, -14.631907)
+transform = Transform3D(-0.9999901, -3.4743912e-06, 0.0043634344, -2.2737358e-13, 0.9999997, 0.0007962512, -0.0043634344, 0.0007962436, -0.99999017, -13.232793, 0.011608124, -14.631907)
 
 [node name="MobTimer" type="Timer" parent="."]
 wait_time = 0.5
 autostart = true
 
+[node name="UserInterface" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_272bh")
+
+[node name="ScoreLabel" type="Label" parent="UserInterface"]
+layout_mode = 0
+offset_left = 211.0
+offset_top = 165.0
+offset_right = 272.0
+offset_bottom = 214.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+text = "Score: 0
+"
+script = ExtResource("5_7mycd")
+
+[node name="Retry" type="ColorRect" parent="UserInterface"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.3764706)
+
+[node name="Label" type="Label" parent="UserInterface/Retry"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -107.5
+offset_top = -29.5
+offset_right = 107.5
+offset_bottom = 29.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Press Enter to retry
+"
+
+[connection signal="hit" from="Player" to="." method="_on_player_hit"]
 [connection signal="timeout" from="MobTimer" to="." method="_on_mob_timer_timeout"]
