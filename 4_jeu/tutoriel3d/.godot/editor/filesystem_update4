@@ -1,12 +1,2 @@
-res://mob.gd
-res://main.gd
-res://main.tscn
 res://mob.tscn
-res://player.gd
-<<<<<<< HEAD
-res://mob.tscn
-=======
 res://player.tscn
-res://score_label.gd
-res://music_player.tscn
->>>>>>> 0ffda280bca9f18dc42370327e6d75ada59212be
