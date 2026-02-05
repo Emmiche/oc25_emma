@@ -1,0 +1,90 @@
+[gd_scene format=3 uid="uid://cgxl5uxknx3ka"]
+
+[ext_resource type="PackedScene" uid="uid://c1p7haw52ar7k" path="res://room.tscn" id="1_o1325"]
+[ext_resource type="PackedScene" uid="uid://ckhj22e850nm4" path="res://bed.tscn" id="2_vy7fe"]
+[ext_resource type="PackedScene" uid="uid://v6copa7ehrc0" path="res://lamp.tscn" id="3_10qhy"]
+[ext_resource type="PackedScene" uid="uid://dur38y1c06871" path="res://bookshelf.tscn" id="4_2y50f"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o1325"]
+albedo_color = Color(1, 0.44313726, 1, 1)
+
+[node name="House" type="Node3D" unique_id=1914172535]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=255699141]
+transform = Transform3D(-1, -3.5527137e-15, 8.742278e-08, 7.5710346e-08, 0.49999997, 0.86602545, -4.3711385e-08, 0.86602545, -0.49999997, 0.4000001, 10.799999, -27.2)
+
+[node name="room" parent="." unique_id=1610786793 instance=ExtResource("1_o1325")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 3, 1)
+
+[node name="lamp2" parent="room" unique_id=1272055523 instance=ExtResource("3_10qhy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.45293, 0.60000014, 0.20000052)
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="room/lamp2" unique_id=620340403]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -4, 1.5999997, -3.4000006)
+light_color = Color(1, 1, 0.62352943, 1)
+light_energy = 16.0
+light_volumetric_fog_energy = 8.762
+light_size = 0.485
+spot_range = 7.0
+spot_angle = 27.232466
+
+[node name="SpotLight3D3" type="SpotLight3D" parent="room/lamp2" unique_id=2069073252]
+transform = Transform3D(-0.99986255, -7.247336e-10, 0.016579973, -0.016579973, 4.370538e-08, -0.99986255, 0, -1, -4.371139e-08, -4, -2.1125247, -3.4000006)
+light_color = Color(1, 1, 0.62352943, 1)
+light_energy = 16.0
+light_volumetric_fog_energy = 8.762
+light_size = 0.485
+spot_range = 6.0252604
+spot_angle = 27.232466
+
+[node name="bed" parent="room" unique_id=1872499011 instance=ExtResource("2_vy7fe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.3643417, -4.6, 0.5)
+
+[node name="bookshelf" parent="room" unique_id=306466521 instance=ExtResource("4_2y50f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2.8000007, 2.4, 3)
+
+[node name="bookshel2" parent="room" unique_id=371836982 instance=ExtResource("4_2y50f")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -2.7999997, 1.4000006, -1.4)
+
+[node name="tapis" type="CSGBox3D" parent="room" unique_id=1240051585]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8, -4.2000003, 0)
+size = Vector3(3.4, 0.1, 5)
+material = SubResource("StandardMaterial3D_o1325")
+
+[node name="room2" parent="." unique_id=488351469 instance=ExtResource("1_o1325")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 3, 1)
+
+[node name="bed" parent="room2" unique_id=325972144 instance=ExtResource("2_vy7fe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.3202896, -4.6, 0.5)
+
+[node name="lamp" parent="room2" unique_id=548697566 instance=ExtResource("3_10qhy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.200001, 0.60000014, 0.20000052)
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="room2/lamp" unique_id=2060524393]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -4, 1.5999997, -3.4000006)
+light_color = Color(1, 1, 0.62352943, 1)
+light_energy = 16.0
+light_volumetric_fog_energy = 8.762
+light_size = 0.485
+spot_range = 7.0
+spot_angle = 27.232466
+
+[node name="SpotLight3D3" type="SpotLight3D" parent="room2/lamp" unique_id=497090232]
+transform = Transform3D(-0.99986255, -7.247336e-10, 0.016579973, -0.016579973, 4.370538e-08, -0.99986255, 0, -1, -4.371139e-08, -4, -2.1125247, -3.4000006)
+light_color = Color(1, 1, 0.62352943, 1)
+light_energy = 16.0
+light_volumetric_fog_energy = 8.762
+light_size = 0.485
+spot_range = 6.0252604
+spot_angle = 27.232466
+
+[node name="bookshelf" parent="room2" unique_id=1570908323 instance=ExtResource("4_2y50f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2.8000007, 2.4, 3)
+
+[node name="bookshel2" parent="room2" unique_id=923298617 instance=ExtResource("4_2y50f")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -2.8, 1.4000006, -1.4)
+
+[node name="tapis2" type="CSGBox3D" parent="room2" unique_id=114296904]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, -4.2000003, 0)
+size = Vector3(3.4, 0.1, 5)
+material = SubResource("StandardMaterial3D_o1325")
