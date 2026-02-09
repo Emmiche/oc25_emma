@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://y5jxhlagh1sf"]
+
+[ext_resource type="PackedScene" uid="uid://dru76166offm4" path="res://desk.tscn" id="1_l3qwd"]
+[ext_resource type="PackedScene" uid="uid://ckhj22e850nm4" path="res://bed.tscn" id="2_i25js"]
+[ext_resource type="PackedScene" uid="uid://v6copa7ehrc0" path="res://lamp.tscn" id="3_py5gm"]
+[ext_resource type="PackedScene" uid="uid://dur38y1c06871" path="res://bookshelf.tscn" id="4_b7s1a"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lcvim"]
+albedo_color = Color(1.1288707, 2.3757637, 2.3757637, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tk0ko"]
+albedo_color = Color(0.27793166, 0.15281716, 0.1043266, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3d0ab"]
+albedo_color = Color(1, 0.34901962, 0.42745098, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_leg5n"]
+albedo_color = Color(1, 0.34901962, 0.42745098, 1)
+
+[node name="ex_3" type="Node3D" unique_id=1190780657]
+
+[node name="Room" type="CSGBox3D" parent="." unique_id=754932089]
+flip_faces = true
+size = Vector3(10, 10, 10)
+
+[node name="desk" parent="." unique_id=2144278896 instance=ExtResource("1_l3qwd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -8, 0)
+
+[node name="Bed" parent="." unique_id=1738795133 instance=ExtResource("2_i25js")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.3496094, 0)
+
+[node name="Lamp" parent="." unique_id=174869964 instance=ExtResource("3_py5gm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7.5)
+
+[node name="Fenêtre" type="CSGCombiner3D" parent="." unique_id=1840274981]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Fenêtre" unique_id=1823838430]
+transform = Transform3D(0, 0, 1.0000001, 0, 1, 0, -1.0000001, 0, 0, -5, 0.4, 0)
+size = Vector3(3, 5, 0.1)
+material = SubResource("StandardMaterial3D_lcvim")
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="Fenêtre" unique_id=29415973]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -4.8, 3.2, 0)
+radius = 0.1
+height = 5.267
+material = SubResource("StandardMaterial3D_tk0ko")
+
+[node name="Rideau1" type="CSGBox3D" parent="Fenêtre/CSGCylinder3D" unique_id=561120598]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -1.65, 3)
+size = Vector3(0.1, 6, 1.8000001)
+material = SubResource("StandardMaterial3D_3d0ab")
+
+[node name="Rideau2" type="CSGBox3D" parent="Fenêtre/CSGCylinder3D" unique_id=980094407]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 1.5500001, 3)
+size = Vector3(0.1, 6, 1.8000001)
+material = SubResource("StandardMaterial3D_leg5n")
+
+[node name="bookshelf" parent="." unique_id=373061656 instance=ExtResource("4_b7s1a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, -4.5)

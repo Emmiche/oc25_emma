@@ -1,0 +1,101 @@
+[gd_scene format=3 uid="uid://drdwm5ulfvtr3"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_eaa0b"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_hdgcg"]
+sky_material = SubResource("ProceduralSkyMaterial_eaa0b")
+
+[sub_resource type="Environment" id="Environment_we4ua"]
+background_mode = 1
+sky = SubResource("Sky_hdgcg")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5qqhr"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_njlvs"]
+material = SubResource("StandardMaterial3D_5qqhr")
+size = Vector3(20, 1, 20)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_esukd"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_flval"]
+material = SubResource("StandardMaterial3D_esukd")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ng3tf"]
+albedo_color = Color(0.1254902, 0, 0, 1)
+roughness = 0.7
+
+[sub_resource type="SphereMesh" id="SphereMesh_qbk6j"]
+material = SubResource("StandardMaterial3D_ng3tf")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xd7xi"]
+albedo_color = Color(1, 0.96862745, 1, 1)
+roughness = 0.26
+
+[sub_resource type="SphereMesh" id="SphereMesh_tkgnj"]
+material = SubResource("StandardMaterial3D_xd7xi")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i0kjl"]
+albedo_color = Color(1, 0.74509805, 0.8509804, 1)
+metallic = 1.0
+roughness = 0.36
+
+[sub_resource type="SphereMesh" id="SphereMesh_6h4ho"]
+material = SubResource("StandardMaterial3D_i0kjl")
+
+[node name="Node3D" type="Node3D" unique_id=847926917]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=805678440]
+environment = SubResource("Environment_we4ua")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=31499740]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+mesh = SubResource("BoxMesh_njlvs")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=1670833320]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+mesh = SubResource("BoxMesh_flval")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=784163583]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1536566, 1.420927, -1.107168)
+light_color = Color(1, 1, 0.44313726, 1)
+light_energy = 1.475
+shadow_enabled = true
+omni_range = 2.0
+omni_attenuation = 2.0
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="." unique_id=2055184792]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1.5, 0.5)
+light_color = Color(0, 1, 1, 1)
+shadow_enabled = true
+omni_range = 2.0
+omni_attenuation = 2.0
+
+[node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=2039782881]
+transform = Transform3D(1, 0, 0, 0, 0.7071068, 0.7071068, 0, -0.7071068, 0.7071068, 0, 2.6296237, 2.6296237)
+shadow_enabled = true
+spot_angle = 15.0
+spot_angle_attenuation = 0.50000083
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1977018402]
+transform = Transform3D(1, 0, 0, 0, -0.6784931, 0.73460674, 0, -0.73460674, -0.6784931, 1.5667825, 2.9627438, -2.5945275)
+light_color = Color(0.7921569, 1, 1, 1)
+light_energy = 0.129
+shadow_enabled = true
+
+[node name="Node3D" type="Node3D" parent="." unique_id=615214376]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Node3D" unique_id=1925948513]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7794793, 0.48778057, 0)
+mesh = SubResource("SphereMesh_qbk6j")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Node3D" unique_id=1837316665]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7794793, 1.4333858, 0)
+mesh = SubResource("SphereMesh_tkgnj")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Node3D" unique_id=473945067]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7794793, 2.3310342, 0)
+mesh = SubResource("SphereMesh_6h4ho")
