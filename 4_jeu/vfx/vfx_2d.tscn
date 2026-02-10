@@ -1,0 +1,157 @@
+[gd_scene format=3 uid="uid://dy8848jr40442"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_mb7ju"]
+particle_flag_disable_z = true
+gravity = Vector3(0, 98, 0)
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_kqe62"]
+particle_flag_disable_z = true
+emission_shape = 1
+emission_sphere_radius = 54.45
+gravity = Vector3(0, 98, 0)
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_bkak3"]
+particle_flag_disable_z = true
+spread = 180.0
+initial_velocity_min = 50.0
+initial_velocity_max = 50.0
+gravity = Vector3(0, 98, 0)
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_1g83g"]
+particle_flag_disable_z = true
+spread = 180.0
+initial_velocity_min = 100.0
+initial_velocity_max = 100.0
+gravity = Vector3(0, 98, 0)
+
+[sub_resource type="Gradient" id="Gradient_26dmw"]
+colors = PackedColorArray(1, 0, 0, 1, 0, 1, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_jxgxf"]
+gradient = SubResource("Gradient_26dmw")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_w4a7f"]
+particle_flag_disable_z = true
+spread = 180.0
+initial_velocity_min = 100.0
+initial_velocity_max = 100.0
+gravity = Vector3(0, 98, 0)
+color_ramp = SubResource("GradientTexture1D_jxgxf")
+
+[sub_resource type="Gradient" id="Gradient_rlk1x"]
+colors = PackedColorArray(1, 0, 0, 1, 0, 1, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_qukv0"]
+gradient = SubResource("Gradient_rlk1x")
+
+[sub_resource type="Curve" id="Curve_ucwun"]
+_limits = [0.0, 10.0, 0.0, 1.0]
+_data = [Vector2(0.023489937, 5.002868), 0.0, 0.0, 0, 0, Vector2(0.6073826, 2.951807), 0.0, 0.0, 0, 0, Vector2(1, 10), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_yeldb"]
+curve = SubResource("Curve_ucwun")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_6oa34"]
+particle_flag_disable_z = true
+spread = 180.0
+initial_velocity_min = 100.0
+initial_velocity_max = 100.0
+gravity = Vector3(0, 98, 0)
+scale_curve = SubResource("CurveTexture_yeldb")
+color_ramp = SubResource("GradientTexture1D_qukv0")
+
+[node name="VFX2D" type="Node2D" unique_id=579675077]
+
+[node name="PointEmission" type="GPUParticles2D" parent="." unique_id=666667447]
+position = Vector2(-105, -1)
+process_material = SubResource("ParticleProcessMaterial_mb7ju")
+
+[node name="Label" type="Label" parent="PointEmission" unique_id=1793884975]
+offset_left = -32.0
+offset_top = -98.0
+offset_right = 65.0
+offset_bottom = -23.0
+text = "point source
+8 particles
+1s."
+
+[node name="SphereEmission" type="GPUParticles2D" parent="." unique_id=598195042]
+position = Vector2(126, 0)
+amount = 1000
+process_material = SubResource("ParticleProcessMaterial_kqe62")
+
+[node name="Label" type="Label" parent="SphereEmission" unique_id=1287793015]
+offset_left = -55.0
+offset_top = -98.0
+offset_right = 57.0
+offset_bottom = -23.0
+text = "spawn sphere 
+1000 particles
+1s."
+
+[node name="InitialVelocity" type="GPUParticles2D" parent="." unique_id=608475470]
+position = Vector2(-266, 3)
+amount = 80
+process_material = SubResource("ParticleProcessMaterial_bkak3")
+
+[node name="Label" type="Label" parent="InitialVelocity" unique_id=243984363]
+offset_left = -93.0
+offset_top = -112.0
+offset_right = 92.0
+offset_bottom = -11.0
+text = "spawn initial velocity 50
+spread = +/- 180 degrés
+80 particles
+1s."
+
+[node name="Explosiveness" type="GPUParticles2D" parent="." unique_id=289914568]
+position = Vector2(-500, 1)
+amount = 80
+explosiveness = 0.9
+process_material = SubResource("ParticleProcessMaterial_1g83g")
+
+[node name="Label" type="Label" parent="Explosiveness" unique_id=922516977]
+offset_left = -93.0
+offset_top = -112.0
+offset_right = 92.0
+offset_bottom = -11.0
+text = "spawn initial velocity 100
+explosiveness 0.9
+80 particles
+1s."
+
+[node name="Color" type="GPUParticles2D" parent="." unique_id=950595875]
+position = Vector2(-511, 309)
+amount = 80
+explosiveness = 0.9
+process_material = SubResource("ParticleProcessMaterial_w4a7f")
+
+[node name="Label" type="Label" parent="Color" unique_id=927609472]
+offset_left = -127.0
+offset_top = -152.0
+offset_right = 130.0
+offset_bottom = -25.0
+text = "Process material > display > color
+explosiveness 0.9
+gradient : red > green
+80 particles
+1s."
+
+[node name="Scale" type="GPUParticles2D" parent="." unique_id=657087019]
+position = Vector2(-149, 307)
+amount = 80
+explosiveness = 0.9
+process_material = SubResource("ParticleProcessMaterial_6oa34")
+
+[node name="Label" type="Label" parent="Scale" unique_id=1394379696]
+offset_left = -127.0
+offset_top = -152.0
+offset_right = 130.0
+offset_bottom = -25.0
+text = "Process material > display > color
+Process material > display > scale
+explosiveness 0.9
+gradient : 5 > 3 > 10
+80 particles
+1s."
