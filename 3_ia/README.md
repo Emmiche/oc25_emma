@@ -14,6 +14,7 @@ Encadrés par leur enseignant de mathématiques, les quatre lauréats ont su gar
 
 Cette victoire illustre non seulement l’excellence académique du Bugnon, mais aussi la force du travail d’équipe. Une réception officielle sera organisée prochainement pour célébrer ce succès et inspirer les futures volées à relever, elles aussi, le défi Math 4 Fun.
 
+
 Puis j'ai de nouveau demandé à ChatGPT de le refaire en version finale, en lui demandant de modifier légèrement le texte et en mettant deux images, mais il y a eu de nombreuses fautes d'orthographe. Cependant, la première image est plutôt bien, bien qu'il y ait trois filles et un garçon bien que les noms donnés dans l'article laissaient penser à deux filles et deux garçons. La deuxième n'est pas incroyable, elle est comme une répétion de la première image et c'est comme si le prof avait été remplacé par un autre prof plus jeune, et les deux élèves présents sur l'images n'étaient pas sur la première image. J'ai été surprise de voir autant de fautes dans la version finale.
 <img width="1024" height="1536" alt="ChatGPT Image 24 févr  2026, 17_44_14" src="https://github.com/user-attachments/assets/f45acb66-e68d-440f-88cc-f953ede54e8a" />
 
