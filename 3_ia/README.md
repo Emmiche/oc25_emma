@@ -1,6 +1,8 @@
 # Exercices de l'IA
 
-## Exercie 1 : Math 4 Fun
+## Dvoir/exercie 1 pour le 26 février 2026 : Math 4 Fun
+
+J'ai copié-collé les consignes reçues en mail pour que ChatGPT le fasse :
 
 Victoire éclatante au concours Math 4 Fun !
 
@@ -11,4 +13,7 @@ Après plusieurs épreuves mêlant logique, créativité et résolution de probl
 Encadrés par leur enseignant de mathématiques, les quatre lauréats ont su garder leur sang-froid face à des problèmes particulièrement exigeants cette année. Le jury a salué leur rigueur scientifique ainsi que la clarté de leurs démonstrations orales.
 
 Cette victoire illustre non seulement l’excellence académique du Bugnon, mais aussi la force du travail d’équipe. Une réception officielle sera organisée prochainement pour célébrer ce succès et inspirer les futures volées à relever, elles aussi, le défi Math 4 Fun.
-<img width="604" height="618" alt="Capture d’écran 2026-02-24 à 08 57 54" src="https://github.com/user-attachments/assets/9e3e722d-f921-475c-99e9-9afa33a22c97" />
+
+Puis j'ai de nouveau demandé à ChatGPT de le refaire en version finale, en lui demandant de modifier légèrement le texte et en mettant deux images, mais il semble qu'il y ait eu de nombreuses fautes d'orthographe.
+<img width="1024" height="1536" alt="ChatGPT Image 24 févr  2026, 17_44_14" src="https://github.com/user-attachments/assets/f45acb66-e68d-440f-88cc-f953ede54e8a" />
+
