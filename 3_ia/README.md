@@ -1,6 +1,6 @@
 # Exercices de l'IA
 
-## Dvoir/exercie 1 pour le 26 février 2026 : Math 4 Fun
+## Devoir/exercie 1 pour le 26 février 2026 : Math 4 Fun
 
 J'ai copié-collé les consignes reçues en mail pour que ChatGPT le fasse :
 
