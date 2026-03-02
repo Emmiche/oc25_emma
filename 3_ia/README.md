@@ -19,3 +19,30 @@ Cette victoire illustre non seulement l’excellence académique du Bugnon, mais
 Puis j'ai de nouveau demandé à ChatGPT de le refaire en version finale, en lui demandant de modifier légèrement le texte et en mettant deux images, mais il y a eu de nombreuses fautes d'orthographe. Cependant, la première image est plutôt bien, bien qu'il y ait trois filles et un garçon bien que les noms donnés dans l'article laissaient penser à deux filles et deux garçons. La deuxième n'est pas incroyable, elle est comme une répétion de la première image et c'est comme si le prof avait été remplacé par un autre prof plus jeune, et les deux élèves présents sur l'images n'étaient pas sur la première image. J'ai été surprise de voir autant de fautes dans la version finale.
 <img width="1024" height="1536" alt="ChatGPT Image 24 févr  2026, 17_44_14" src="https://github.com/user-attachments/assets/f45acb66-e68d-440f-88cc-f953ede54e8a" />
 
+
+## Lecture 1 pour le 3 mars 2026 : Rapport du Sénat français sur les nouveaux développements de l'IA (2024)
+
+J'ai utilisé ChatGPT pour m'aider dans ce devoir. Voici ce que je lui ai demandé :
+En se basant sur le Rapport du Sénat français sur les nouveaux développements de l'IA (2024) (https://www.senat.fr/rap/r24-170/r24-1701.pdf), en se concentrant plutôt sur les pages 35 à 136, peux tu s'il te plaît répondre à ces deux questions : Citer deux personnes qui ont marqué la création de l'IA. Quelles sont leurs contributions ? Quels sont les développements technologiques récents qui ont permis les IA génératives ?
+
+Et voici ce que ça m'a répondu :
+
+![Réponse1lecture1](https://github.com/user-attachments/assets/815cf5ff-c5c3-4896-91f2-bee06c7a7607)
+
+![Réponse2Lecture1](https://github.com/user-attachments/assets/ec84fb35-a1ec-44d9-a0a2-5ec7b72a6332)
+
+![Réponse3Lecture1](https://github.com/user-attachments/assets/fd30f2a5-a920-4fb4-87ff-9357ac86c72b)
+
+Et à la fin, ça m'a proposé de : "Si tu veux, je peux aussi te résumer comment ces technologies ont changé notre vie quotidienne ou te faire une ligne du temps de l’IA depuis 1950 jusqu’à aujourd’hui 😊".
+
+
+
+
+
+
+
+
+
+
+
+
