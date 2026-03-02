@@ -23,7 +23,7 @@ Puis j'ai de nouveau demandé à ChatGPT de le refaire en version finale, en lui
 ## Lecture 1 pour le 3 mars 2026 : Rapport du Sénat français sur les nouveaux développements de l'IA (2024)
 
 J'ai utilisé ChatGPT pour m'aider dans ce devoir. Voici ce que je lui ai demandé :
-En se basant sur le Rapport du Sénat français sur les nouveaux développements de l'IA (2024) (https://www.senat.fr/rap/r24-170/r24-1701.pdf), en se concentrant plutôt sur les pages 35 à 136, peux tu s'il te plaît répondre à ces deux questions : Citer deux personnes qui ont marqué la création de l'IA. Quelles sont leurs contributions ? Quels sont les développements technologiques récents qui ont permis les IA génératives ?
+"En se basant sur le Rapport du Sénat français sur les nouveaux développements de l'IA (2024) (https://www.senat.fr/rap/r24-170/r24-1701.pdf), en se concentrant plutôt sur les pages 35 à 136, peux tu s'il te plaît répondre à ces deux questions : Citer deux personnes qui ont marqué la création de l'IA. Quelles sont leurs contributions ? Quels sont les développements technologiques récents qui ont permis les IA génératives ?"
 
 Et voici ce que ça m'a répondu :
 
