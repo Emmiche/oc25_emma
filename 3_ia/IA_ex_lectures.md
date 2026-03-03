@@ -1,4 +1,4 @@
-# Exercices de l'IA
+# Exercices et lecures sur l'IA
 
 ## Devoir/exercie 1 pour le 26 février 2026 : Math 4 Fun
 
