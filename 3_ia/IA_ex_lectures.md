@@ -44,20 +44,28 @@ Pour cette lecture, j'ai utilisé Notebooklm, ChatGPT.
 J'ai demandé : "Quelle est la compétence que le benchmark MMLU mesure dans les LLMs ? Quels étaient les performances des meilleurs modèles quand le benchmark a été publié ? Peux tu aussi choisir deux questions du benchmark ?".
 
 L'IA m'a répondu : "Le benchmark MMLU (Measuring Massive Multitask Language Understanding) a été conçu pour mesurer la précision multitâche des modèles de langage sur un spectre très large de connaissances.
+
 Compétences mesurées par le MMLU
+
 L'objectif principal est d'évaluer la compréhension globale du langage à travers l'acquisition de connaissances mondiales étendues et la capacité de résolution de problèmes. Le test est particulièrement exigeant car il :
 Couvre 57 tâches dans des domaines variés tels que les sciences (STEM), les sciences sociales, les humanités et d'autres secteurs professionnels.
+
 Évalue des connaissances acquises spécifiquement pendant la phase de pré-entraînement des modèles.
 Varie en difficulté, allant d'un niveau élémentaire à un niveau professionnel avancé (comme le droit ou la médecine).
 Performances des meilleurs modèles à la publication
+
 Au moment de la publication du benchmark, les modèles étaient encore loin d'atteindre le niveau des experts humains (estimé à environ 89,8 %). Voici les résultats marquants :
+
 UnifiedQA (11 milliards de paramètres) était le modèle le plus performant avec une précision moyenne de 48,9 %.
 GPT-3 X-Large (175 milliards de paramètres) atteignait 43,9 % de précision en mode « few-shot » (avec quelques exemples).
 Les modèles plus petits (jusqu'à 13 milliards de paramètres) obtenaient souvent des scores proches du hasard, soit environ 25 %.
 À titre de comparaison, des humains non spécialisés recrutés via Amazon Mechanical Turk ont obtenu une précision de 34,5 %.
+
 Exemples de questions issues du benchmark
+
 Voici deux exemples de questions à choix multiples utilisées dans le benchmark pour tester différents domaines :
 Mathématiques (niveau lycée) : « Combien y a-t-il de nombres dans la liste 25, 26, ..., 100 ? (A) 75 (B) 76 (C) 22 (D) 23 » (La réponse attendue est B).
+
 Faits mondiaux (Global Facts) : « En 2017, combien d'enfants de 1 an dans le monde ont été vaccinés contre une maladie ? (A) 80 % (B) 60 % (C) 40 % (D) 20 % » (La réponse attendue est A).".
 
 ### Réponse de ChatGPT
