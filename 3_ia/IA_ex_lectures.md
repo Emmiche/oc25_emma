@@ -37,7 +37,7 @@ Et à la fin, ça m'a proposé de : "Si tu veux, je peux aussi te résumer comme
 
 ## Lecture 2 pour le 5 mars 2026 : Measuring Massive Multitask Language Understanding
 
-Pour cette lecture, j'ai utilisé Notebooklm, ChatGPT.
+Pour cette lecture, j'ai utilisé Notebooklm, ChatGPT, et Grok.
 
 ### Réponse de Notebooklm
 
@@ -167,6 +167,76 @@ expliquer pourquoi ce benchmark a marqué un tournant dans l’évaluation des L
 
 ou reformuler cette réponse pour un devoir scolaire ou universitaire.".
 
+### Réponse de Grok
+
+J'ai demandé : "En te basant sur Measuring Massive Multitask Language Understanding (file:///C:/Users/favre/Downloads/Measuring_Massive_Multitask_Languague_Understandig.pdf), peux tu répondre à ces questions : Quelle est la compétence que le benchmark MMLU mesure dans les LLMs ? Quels étaient les performances des meilleurs modèles quand le benchmark a été publié ? Peux tu aussi choisir deux questions du benchmark ?".
+
+Grok m'a répondu : "Voici les réponses demandées.
+
+1. Quelle compétence le benchmark MMLU mesure-t‑il ?
+Le benchmark MMLU (Massive Multitask Language Understanding) mesure :
+
+La capacité d’un modèle de langage à utiliser les connaissances acquises durant le pré‑entraînement
+La compréhension de domaines variés et parfois spécialisés (sciences, médecine, droit, économie, histoire, mathématiques, etc.)
+La capacité de raisonnement et de résolution de problèmes, souvent à un niveau allant du lycée au niveau professionnel
+La performance en zéro‑shot et few‑shot, c’est‑à‑dire sans entraînement dédié
+En résumé, MMLU évalue la profondeur et la largeur de la compréhension textuelle d’un LLM sur 57 matières académiques et professionnelles.
+
+2. Quelles étaient les performances des meilleurs modèles lors de la publication ?
+Au moment de la publication (ICLR 2021), les résultats les plus élevés étaient :
+
+GPT‑3 175B (few‑shot) : 43.9% de précision moyenne
+UnifiedQA (11B, fine‑tuned sur QA) : 48.9% de précision moyenne
+À noter :
+
+La chance aléatoire = 25%
+Les modèles GPT‑3 plus petits (2.7B, 6.7B, 13B) avaient des performances proches du hasard
+Aucun modèle n’approchait le niveau expert humain (~90%)
+3. Deux exemples de questions issues du benchmark MMLU
+Voici deux questions directement extraites du document.
+
+Question 1 — Collegiate Mathematics
+In the complex z‑plane, the set of points satisfying the equation
+𝑧
+2
+=
+∣
+𝑧
+∣
+2
+z 
+2
+ =∣z∣ 
+2
+ 
+is a
+(A) pair of points
+(B) circle
+(C) half‑line
+(D) line
+
+Réponse correcte : (D)
+
+Question 2 — High School Psychology
+While swimming in the ocean, Ivan is frightened by a dark shadow in the water even before he has the chance to identify what the shadow is. The synaptic connections taking place during this incident of fright are best described by which of the following?
+(A) Messages are sent from the thalamus directly to the amygdala
+(B) Messages are sent from the thalamus to the "what" and "where" pathways
+(C) Messages are sent from the parasympathetic nervous system to the cerebral cortex
+(D) Messages are sent from the frontal lobes to the pituitary gland
+
+Réponse correcte : (A)
+
+Si tu veux, je peux aussi t’expliquer pourquoi ces réponses sont correctes, ou te proposer d’autres questions du benchmark.".
+
+### Comparaison des réponses
+
+Leurs réponses à la première question sont très similaires entre elles.
+
+Pour la troisième question que je leur ai posé, les trois ont fait des questions dont la manière de répondre était la même partout, c'est-à-dire de choisir une réponse entre A, B, C, ou D.
+
+Il y a eu très légèrement plus de variation dans les réponses pour la deuxième question posée.
+
+Les trois intelligences artificielles répondent de manière quasiment identique.
 
 
 
