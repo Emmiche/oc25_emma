@@ -236,7 +236,7 @@ Pour la troisième question que je leur ai posé, les trois ont fait des questio
 
 Il y a eu très légèrement plus de variation dans les réponses pour la deuxième question posée.
 
-Les trois intelligences artificielles répondent de manière quasiment identique.
+Les trois intelligences artificielles répondent de manière quasiment identique. Je pense que c'est parce qu'elles ont eu les trois exactement la même source (j'ai fourni au trois le pdf).
 
 
 
