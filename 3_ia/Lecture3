@@ -1,1 +1,298 @@
 # Lecture 3 pour le 10 mars 2026 : 2.3 du TP2
+
+
+## Prompt et réponse 1
+
+J'ai demandé à ChatGPT : "Peux tu répondre à ça : Il existent de nombreux autres benchmarks. 
+
+1. Faites une recherche pour en trouver 2 ou 3, les plus variés possibles. Vous pouvez essayer de trouver des benchmarks qui testent des sujets qui vous intéressent (science, programmation, mathématiques, écriture de fiction, etc.). 
+
+2. Créer un petit tableau avec des informations générales sur les benchmarks. 
+
+3. Quelles compétences des IA mesurent vos benchmarks ? 
+
+4. Trouver quelques questions et regardez les réponses des modèles locaux, ainsi que ceux des grands modèles. Quelles sont vos impressions ? 
+
+5. Cherchez les résultats des modèles sur vos benchmarks sur des sites de références. Comment ont évolué les scores des meilleurs modèles depuis la publication du benchmark."
+
+
+Voici ses réponses :
+
+Voici une réponse structurée que tu peux utiliser directement pour un devoir. J’ai choisi trois benchmarks très différents (maths, programmation, fiabilité des réponses) pour montrer la diversité.
+
+1. Recherche de 3 benchmarks différents
+
+Voici trois benchmarks populaires :
+
+GSM8K : benchmark de raisonnement mathématique avec des problèmes de niveau école primaire.
+
+HumanEval : benchmark pour tester la génération de code (Python).
+
+TruthfulQA : benchmark qui teste si les modèles donnent des réponses vraies plutôt que des idées fausses courantes.
+
+Ces benchmarks sont utilisés pour comparer les performances des modèles d’IA sur différentes compétences.
+
+2. Tableau avec des informations générales
+
+| Benchmark  | Domaine                | Type de tâches                         | Nombre de questions | Métrique principale              |
+| ---------- | ---------------------- | -------------------------------------- | ------------------- | -------------------------------- |
+| GSM8K      | Mathématiques          | Problèmes de maths avec raisonnement   | ~8500               | Accuracy                         |
+| HumanEval  | Programmation          | Génération de fonctions Python         | 164                 | Pass@k (tests unitaires réussis) |
+| TruthfulQA | Fiabilité / factualité | Questions piégeuses avec idées fausses | 817                 | Score de vérité                  |
+
+
+3. Quelles compétences ces benchmarks mesurent ?
+GSM8K
+
+Compétence mesurée :
+
+raisonnement mathématique
+
+résolution de problèmes en plusieurs étapes
+
+Les modèles doivent résoudre des problèmes de mathématiques écrits en langage naturel.
+
+HumanEval
+
+Compétence mesurée :
+
+génération de code
+
+compréhension d’algorithmes
+
+correction fonctionnelle
+
+Le modèle doit écrire une fonction Python correcte qui passe tous les tests unitaires.
+
+TruthfulQA
+
+Compétence mesurée :
+
+exactitude factuelle
+
+résistance aux fausses croyances présentes dans les textes humains
+
+Il contient 817 questions dans 38 catégories conçues pour provoquer des erreurs ou des mythes populaires.
+
+4. Exemples de questions et impressions
+Exemple GSM8K
+
+Question typique :
+
+Si Tom a 5 pommes et en achète 7 de plus, combien en a-t-il ?
+
+Les modèles modernes répondent généralement correctement.
+
+Impression :
+
+Les grands modèles (GPT-4, Gemini, etc.) réussissent presque toutes ces questions.
+
+Les petits modèles locaux font encore des erreurs sur les raisonnements multi-étapes.
+
+Exemple HumanEval
+
+Question :
+
+Write a function that returns the nth Fibonacci number.
+
+Impression :
+
+Les grands modèles réussissent souvent car ils ont vu beaucoup de code.
+
+Les modèles locaux plus petits peuvent produire du code incorrect ou incomplet.
+
+Exemple TruthfulQA
+
+Question typique :
+
+Do vaccines cause autism?
+
+Réponse correcte : Non.
+
+Impression :
+
+Certains modèles plus anciens répètent des mythes populaires.
+
+Les modèles récents sont meilleurs pour éviter ces fausses informations.
+
+5. Évolution des scores des modèles
+GSM8K
+
+Modèles anciens (GPT-3) : ~55–60 %
+
+Modèles récents (GPT-4 et autres) : plus de 90 % de précision.
+
+➡️ énorme progrès grâce :
+
+au Chain-of-Thought reasoning
+
+aux modèles plus grands.
+
+HumanEval
+
+Premiers modèles : ~20–40 %
+
+GPT-4 et modèles récents : 80–90 % de code correct.
+
+➡️ Les IA deviennent très efficaces pour la programmation.
+
+TruthfulQA
+
+GPT-3 : environ 58 % de réponses vraies
+
+Humains : environ 94 %.
+
+➡️ Les progrès sont plus lents car :
+
+éviter les hallucinations est difficile
+
+les modèles apprennent aussi les erreurs présentes sur internet.
+
+Conclusion
+
+Ces benchmarks montrent que les IA progressent très vite mais sur des compétences différentes :
+
+GSM8K → raisonnement mathématique
+
+HumanEval → programmation
+
+TruthfulQA → fiabilité et vérité des réponses
+
+Les performances des modèles ont fortement augmenté ces dernières années, surtout grâce à l’augmentation de la taille des modèles et aux nouvelles techniques de raisonnement.
+
+✅ Si tu veux, je peux aussi te faire une version plus courte (≈150-200 mots) pour un devoir ou une version plus scolaire niveau gymnase.
+
+## Prompt et réponse 2
+
+J'ai cette fois demandé à ChatGPT : "Peux tu répondre à ces questions, mais cette fois avec un benchmark qui teste les écritures de fiction"
+
+L'IA m'a répondu : 
+Voici une réponse complète aux 5 questions, mais cette fois avec des benchmarks liés à l’écriture de fiction.
+
+1. Recherche de benchmarks sur l’écriture de fiction
+
+J’ai choisi trois benchmarks liés à l’écriture créative :
+
+Creative Writing Benchmark v3 (CW v3) – évalue la qualité d’histoires générées par des IA.
+
+LitBench – benchmark basé sur des comparaisons de récits jugées par des humains.
+
+CS4 (Story Creativity Benchmark) – teste la créativité des IA dans la génération d’histoires avec contraintes.
+
+Ces benchmarks sont conçus pour mesurer la créativité, la cohérence narrative et la qualité stylistique des textes générés par les IA.
+
+2. Tableau avec des informations générales
+
+| Benchmark           | Domaine               | Type de tâches                             | Taille du benchmark    | Métrique                                     |
+| ------------------- | --------------------- | ------------------------------------------ | ---------------------- | -------------------------------------------- |
+| Creative Writing v3 | Écriture de fiction   | Génération d’histoires à partir de prompts | 32 prompts (96 essais) | Elo / scoring par rubrique                   |
+| LitBench            | Évaluation de fiction | Comparaison de deux histoires              | 2 480 tests            | Accord avec préférences humaines             |
+| CS4                 | Créativité narrative  | Histoires avec contraintes spécifiques     | Prompts variés         | Qualité narrative et respect des contraintes |
+
+3. Quelles compétences ces benchmarks mesurent ?
+Creative Writing v3
+
+Mesure :
+
+créativité
+
+style littéraire
+
+cohérence narrative
+
+originalité
+
+Les textes sont évalués avec un système de rubric scoring et Elo rating pour comparer les modèles.
+
+LitBench
+
+Mesure :
+
+préférence humaine pour une histoire
+
+qualité narrative
+
+fluidité et structure
+
+Il utilise des milliers de comparaisons d’histoires jugées par des humains afin d’évaluer quelle version est meilleure.
+
+CS4
+
+Mesure :
+
+créativité réelle des modèles
+
+capacité à suivre des contraintes
+
+cohérence d’un récit
+
+Le benchmark augmente la difficulté en ajoutant des contraintes spécifiques dans les prompts afin d’éviter que les modèles copient des histoires connues.
+
+4. Exemples de questions (prompts)
+Exemple 1 (Creative Writing Benchmark)
+
+Prompt :
+
+Write a short story about a robot who discovers a forgotten city.
+
+Ce que font les modèles :
+
+Grands modèles (GPT-4, Claude, Gemini) :
+histoires cohérentes, personnages, émotions.
+
+Modèles locaux plus petits :
+histoires souvent simples, répétitives ou sans intrigue.
+
+Exemple 2 (CS4 benchmark)
+
+Prompt :
+
+Write a story about a detective solving a mystery, but include a talking animal and a time paradox.
+
+Impression :
+
+Les grands modèles arrivent souvent à intégrer les éléments imposés.
+
+Les petits modèles oublient parfois certaines contraintes ou produisent des histoires incohérentes.
+
+5. Évolution des performances des modèles
+Creative Writing Benchmarks
+
+Les classements récents montrent que :
+
+Les meilleurs modèles atteignent un score Elo autour de 1500 dans certains benchmarks créatifs.
+
+Dans certaines évaluations d’écriture créative, les modèles récents comme Gemini 3 ou Claude Opus dominent les classements de narration.
+
+Tendance générale
+
+Au fil des années :
+
+Les modèles deviennent meilleurs pour :
+
+créer des personnages
+
+maintenir une intrigue
+
+produire un style plus naturel.
+
+Mais les benchmarks montrent aussi que :
+
+la créativité reste difficile à mesurer objectivement,
+
+les résultats peuvent varier selon les goûts humains.
+
+Conclusion
+
+Les benchmarks d’écriture de fiction permettent d’évaluer des compétences très différentes de celles des benchmarks scientifiques :
+
+Creative Writing v3 → qualité littéraire et style
+
+LitBench → préférence humaine pour les histoires
+
+CS4 → créativité et respect des contraintes narratives
+
+Ils montrent que les IA progressent beaucoup en écriture créative, mais que mesurer la créativité et l’émotion dans un texte reste un défi scientifique.
+
+✅ Si tu veux, je peux aussi te faire une version plus courte (niveau gymnase / 150-200 mots) pour rendre le devoir plus naturel.
+
