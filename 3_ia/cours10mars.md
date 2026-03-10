@@ -8,4 +8,4 @@
   
 - Evaluation (ce qu'on a fait au TP2)
 
-- Déploiement : quantification et distillation = comment rendre le model plus petit. Moins de byte/bit ? = moins de ???
+- Déploiement : quantification et distillation = comment rendre le model plus petit. Moins de byte/bit ? = moins de ??? Gros model enseigne au petit model.
