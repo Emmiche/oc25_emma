@@ -25,3 +25,9 @@ Deep learning : couches l'une sur les autres ?
 Aller dans l'autre sens = minimiser ? -> faut dériver
 
 On enchaine ..... devient une fonction composée.
+
+## Tokenisation
+
+........
+
+2 étapes (par rapport au réseau de neurones) : tokenisation (....), et embedding (....)
