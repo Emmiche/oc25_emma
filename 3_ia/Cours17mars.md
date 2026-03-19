@@ -28,6 +28,6 @@ On enchaine ..... devient une fonction composée.
 
 ## Tokenisation
 
-........
+Tokenisation = .....
 
-2 étapes (par rapport au réseau de neurones) : tokenisation (....), et embedding (....)
+2 étapes (par rapport au réseau de neurones) : tokenisation (sérapation de mots ? Bouts de mots ?), et embedding (transformation en vecteur, compresser ???? quelque chose avec milier .... vectuer ....).
