@@ -16,6 +16,7 @@ Minimiser valeur entre réponse du model et ????
 
 ^Yi = model. forward pass = réseau de neuronne ?
 
+
 ## Réseau de neurone
 
 Neurone reçoit des infos en entrée et donne une réponse en sortie. Multiplier poids et entrée ? Produits scalaire entre les poids et x.
@@ -26,6 +27,7 @@ Aller dans l'autre sens = minimiser ? -> faut dériver
 
 On enchaine ..... devient une fonction composée.
 
+Données d'entrée et de sortie comme dams une fonction.
 ## Tokenisation
 
 Tokenisation = .....
