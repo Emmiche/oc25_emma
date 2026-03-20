@@ -1,0 +1,207 @@
+J'ai demandé à ChatGPT de corriger et améliorer les notes que j'avais prise :
+
+
+
+Oui 👍 — tes notes sont déjà pas mal, il faut surtout les clarifier, corriger et structurer. Je vais te les réécrire proprement, comme un résumé de cours clair et compréhensible.
+
+📚 Fonctionnement d’un LLM (version corrigée)
+1. 🔧 Machine Learning (base)
+
+Le machine learning consiste à apprendre une fonction mathématique :
+
+👉 f(x) = y
+
+x (entrée) : données (ex : texte, image, prompt)
+
+y (sortie) : prédiction (ex : mot suivant, classe, réponse)
+
+Objectif
+
+Créer un modèle qui fait des bonnes prédictions.
+
+📌 Données d’entraînement
+
+On entraîne le modèle avec des couples (x, y) :
+
+x = entrée (ex : une phrase)
+
+y = réponse correcte (appelée label, noté 
+𝑦
+𝑖
+y
+i
+	​
+
+)
+
+Exemple :
+
+x = image
+
+y = "flamant rose"
+
+📉 Fonction de perte (loss)
+
+Le modèle fait une prédiction :
+👉 
+𝑦
+^
+y
+^
+	​
+
+ (y chapeau)
+
+On compare :
+
+𝑦
+^
+y
+^
+	​
+
+ = prédiction du modèle
+
+𝑦
+y = vraie réponse
+
+👉 On calcule une erreur (loss) = distance entre les deux
+
+Objectif :
+👉 minimiser cette erreur
+
+🔁 Entraînement
+
+Forward pass : le modèle fait une prédiction
+
+Calcul de l’erreur
+
+Ajustement des paramètres pour améliorer le modèle
+
+🤖 Différence avec IA symbolique
+
+IA symbolique : règles écrites par des humains
+
+Machine learning : le modèle apprend tout seul à partir des données
+
+2. 🧠 Réseaux de neurones
+
+Un réseau de neurones est une fonction composée de plusieurs couches.
+
+🔹 Neurone
+
+Un neurone :
+
+reçoit des entrées 
+𝑥
+x
+
+multiplie par des poids
+
+fait une somme (produit scalaire)
+
+applique une fonction
+
+👉 sortie = 
+𝑤
+⋅
+𝑥
++
+𝑏
+w⋅x+b
+
+🔹 Deep Learning
+
+Plusieurs couches de neurones empilées
+
+Chaque couche transforme les données
+
+👉 On obtient une fonction très complexe
+
+🔁 Apprentissage
+
+On calcule l’erreur
+
+On ajuste les poids avec des dérivées (gradient)
+
+👉 c’est la backpropagation
+
+3. 🧩 LLM (modèle de langage)
+
+Un LLM prédit :
+
+👉 le prochain mot (ou token)
+
+Exemple :
+
+"Je vais à la ___" → le modèle prédit "école"
+
+Donc :
+
+entrée = texte précédent
+
+sortie = mot suivant
+
+4. ✂️ Tokenisation
+
+Un modèle ne comprend pas directement les mots.
+
+Étape 1 : Tokenisation
+
+On découpe le texte en tokens :
+
+mots
+
+morceaux de mots
+
+parfois caractères
+
+Exemple :
+
+"manger" → "man" + "ger"
+
+Étape 2 : Embedding
+
+Chaque token est transformé en vecteur de nombres.
+
+👉 Un mot devient une liste de nombres (ex : 768 valeurs)
+
+Pourquoi ?
+
+pour que le réseau de neurones puisse les traiter
+
+🔄 Résumé global du fonctionnement d’un LLM
+
+Texte → tokenisation
+
+Tokens → vecteurs (embedding)
+
+Vecteurs → réseau de neurones
+
+Le modèle prédit → token suivant
+
+On compare avec la vraie réponse → erreur
+
+On ajuste le modèle → apprentissage
+
+✅ Ce que tu avais bien compris
+
+✔️ idée de prédiction 
+𝑥
+→
+𝑦
+x→y
+✔️ notion de distance / erreur
+✔️ rôle des poids dans les neurones
+✔️ tokenisation + embedding
+✔️ importance de minimiser l’erreur
+
+❗ Petites corrections importantes
+
+"outpute" → output / sortie
+
+"entrée à une sortie" → c’est une fonction (pas juste une correspondance simple)
+
+"distance entre réponses" → c’est la fonction de perte (loss)
+
+"aller dans l’autre sens" → c’est backpropagation
