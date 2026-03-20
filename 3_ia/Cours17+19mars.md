@@ -27,9 +27,9 @@ Aller dans l'autre sens = minimiser ? -> faut dériver
 
 On enchaine ..... devient une fonction composée.
 
-Données d'entrée et de sortie comme dams une fonction.
+Données d'entrée et de sortie comme dans une fonction.
 ## Tokenisation
 
 Tokenisation = .....
 
-2 étapes (par rapport au réseau de neurones) : tokenisation (sérapation de mots ? Bouts de mots ?), et embedding (transformation en vecteur, compresser ???? quelque chose avec milier .... vectuer ....).
+2 étapes (par rapport au réseau de neurones) : tokenisation (sérapation de mots ? Bouts de mots ?), et embedding (transformation en vecteur, compresser ???? quelque chose avec milier .... vecteur ....).
