@@ -16,6 +16,7 @@ Minimiser valeur entre réponse du model et ????
 
 ^Yi = model. forward pass = réseau de neuronne ?
 
+
 ## Réseau de neurone
 
 Neurone reçoit des infos en entrée et donne une réponse en sortie. Multiplier poids et entrée ? Produits scalaire entre les poids et x.
@@ -25,3 +26,10 @@ Deep learning : couches l'une sur les autres ?
 Aller dans l'autre sens = minimiser ? -> faut dériver
 
 On enchaine ..... devient une fonction composée.
+
+Données d'entrée et de sortie comme dans une fonction.
+## Tokenisation
+
+Tokenisation = .....
+
+2 étapes (par rapport au réseau de neurones) : tokenisation (sérapation de mots ? Bouts de mots ?), et embedding (transformation en vecteur, compresser ???? quelque chose avec milier .... vecteur ....).
