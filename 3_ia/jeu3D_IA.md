@@ -15,3 +15,6 @@ Sujets des futurs cours : moteur physique (gravité collisions des objets), mani
 Thématiques possibles : phase d'entrainement du système, phase d'inférence, compétition international (US, EU, Chine), personnes (Alan Turing, Sam Altman, Elon Musk), tokenization, testing (MMML, GPQA)
 
 Exemple d'un prompt : créez un jeu avec Godot 4.6 au sujet de l'intelligence artificielle .........
+Prof montre ce que l'IA lui a proposé.
+
+Potentiellement faire à deux.
