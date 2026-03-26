@@ -18,3 +18,8 @@ Exemple d'un prompt : créez un jeu avec Godot 4.6 au sujet de l'intelligence ar
 Prof montre ce que l'IA lui a proposé.
 
 Potentiellement faire à deux.
+
+
+## How to make a 3D game
+
+Static body peut avoir des collisions mais ne bouge as.
