@@ -30,6 +30,8 @@ shadow_enabled = true
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=494163163]
 environment = SubResource("Environment_1bvp3")
 
+[node name="ProtoController" parent="." unique_id=2021529420 instance=ExtResource("2_h2yge")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.811935, 3.2610092, 44.559593)
 [node name="Player" parent="." unique_id=2021529420 instance=ExtResource("2_h2yge")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 116.02105, -11.539162, -93.846436)
 
