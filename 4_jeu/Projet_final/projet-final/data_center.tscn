@@ -12,22 +12,22 @@ albedo_color = Color(0.16924527, 0.1692453, 0.16924527, 1)
 albedo_color = Color(0.16862746, 0.16862746, 0.16862746, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n6bwr"]
-albedo_color = Color(0.16924527, 0.1692453, 0.16924527, 1)
+albedo_color = Color(0.48805398, 0.48805404, 0.48805392, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qfrnv"]
-albedo_color = Color(0.16924527, 0.1692453, 0.16924527, 1)
+albedo_color = Color(0.48805398, 0.48805404, 0.48805392, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3msh6"]
-albedo_color = Color(0.16924527, 0.1692453, 0.16924527, 1)
+albedo_color = Color(0.48805398, 0.48805404, 0.48805392, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xkuxl"]
 albedo_color = Color(0.5154445, 0.33673406, 0.11010771, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c8rh8"]
-albedo_color = Color(0.16924527, 0.1692453, 0.16924527, 1)
+albedo_color = Color(0.48805398, 0.48805404, 0.48805392, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fry2b"]
-albedo_color = Color(0.16924527, 0.1692453, 0.16924527, 1)
+albedo_color = Color(0.48805398, 0.48805404, 0.48805392, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ba7r1"]
 albedo_color = Color(0.16924527, 0.1692453, 0.16924527, 1)
@@ -36,13 +36,13 @@ albedo_color = Color(0.16924527, 0.1692453, 0.16924527, 1)
 albedo_color = Color(0.16924527, 0.1692453, 0.16924527, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8hgi2"]
-albedo_color = Color(0.16924527, 0.1692453, 0.16924527, 1)
+albedo_color = Color(0.48805398, 0.48805404, 0.48805392, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fs3h8"]
-albedo_color = Color(0.16924527, 0.1692453, 0.16924527, 1)
+albedo_color = Color(0.48805398, 0.48805404, 0.48805392, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t1bb3"]
-albedo_color = Color(0.16924527, 0.1692453, 0.16924527, 1)
+albedo_color = Color(0.48805398, 0.48805404, 0.48805392, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_opcvf"]
 albedo_color = Color(0.16924527, 0.1692453, 0.16924527, 1)
