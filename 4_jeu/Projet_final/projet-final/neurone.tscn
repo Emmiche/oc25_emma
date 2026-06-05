@@ -3,6 +3,9 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_nyexc"]
 size = Vector3(20, 3, 20)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jbpwe"]
+albedo_color = Color(0, 0, 0, 1)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_75cue"]
 albedo_color = Color(0, 0, 0, 1)
 
@@ -249,6 +252,7 @@ shape = SubResource("BoxShape3D_nyexc")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Base/CollisionShape3D" unique_id=1231978372]
 size = Vector3(20, 3, 20)
+material = SubResource("StandardMaterial3D_jbpwe")
 
 [node name="Escalier" type="CSGBox3D" parent="Base/CollisionShape3D/CSGBox3D" unique_id=1647640905]
 transform = Transform3D(1, -1.1641532e-10, 0, 1.4551915e-11, 0.8467229, 0.53203416, -2.3283064e-10, -0.53203416, 0.84672296, 7.7962713, 1.1804519, -8.124255)
