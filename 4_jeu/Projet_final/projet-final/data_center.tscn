@@ -106,6 +106,41 @@ albedo_color = Color(1, 1, 0, 1)
 material = SubResource("StandardMaterial3D_av147")
 size = Vector3(0.5, 0.5, 0.1)
 
+[sub_resource type="Curve" id="Curve_cj5kg"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.81451607, 0.35570472), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_5d6jn"]
+curve = SubResource("Curve_cj5kg")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_cj5kg"]
+emission_shape = 6
+emission_ring_axis = Vector3(0, 0, 1)
+emission_ring_height = 1.0
+emission_ring_radius = 1.0
+emission_ring_inner_radius = 0.0
+emission_ring_cone_angle = 90.0
+direction = Vector3(1, 1, 0)
+initial_velocity_min = 0.5
+initial_velocity_max = 0.5
+gravity = Vector3(0, 0, 0)
+damping_min = 50.000004
+damping_max = 50.000004
+scale_min = 0.9
+scale_max = 0.9
+scale_curve = SubResource("CurveTexture_5d6jn")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_trvtd"]
+albedo_color = Color(1, 0, 0, 1)
+emission_enabled = true
+emission = Color(0.62352943, 0, 0, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_5d6jn"]
+material = SubResource("StandardMaterial3D_trvtd")
+radius = 0.09
+height = 0.15
+radial_segments = 16
+
 [node name="DataCenter" type="CSGCombiner3D" unique_id=683001788]
 use_collision = true
 
@@ -881,8 +916,16 @@ transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -19.
 [node name="Serveur8" parent="PetiteRangéeServeur3" unique_id=1251328317 instance=ExtResource("1_cj5kg")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -18.2, 1.987, 47.714)
 
-[node name="Serveur9" parent="PetiteRangéeServeur3" unique_id=305300111 instance=ExtResource("1_cj5kg")]
+[node name="Contamimé3" parent="PetiteRangéeServeur3" unique_id=305300111 instance=ExtResource("1_cj5kg")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -16.7, 1.987, 47.714)
+
+[node name="Marque" type="GPUParticles3D" parent="PetiteRangéeServeur3/Contamimé3" unique_id=119225830]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.29582095, 0.30244827)
+amount = 20
+lifetime = 2.0
+fixed_fps = 20
+process_material = SubResource("ParticleProcessMaterial_cj5kg")
+draw_pass_1 = SubResource("SphereMesh_5d6jn")
 
 [node name="Serveur10" parent="PetiteRangéeServeur3" unique_id=861994728 instance=ExtResource("1_cj5kg")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -15.2, 1.987, 47.714)
@@ -1022,8 +1065,16 @@ transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -13.
 [node name="Serveur12" parent="DoublePetiteRangée2/PetiteRangéeServeur2" unique_id=681828669 instance=ExtResource("1_cj5kg")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -12.2, 1.987, 47.714)
 
-[node name="Serveur13" parent="DoublePetiteRangée2/PetiteRangéeServeur2" unique_id=1222586078 instance=ExtResource("1_cj5kg")]
+[node name="Contaminé1" parent="DoublePetiteRangée2/PetiteRangéeServeur2" unique_id=1222586078 instance=ExtResource("1_cj5kg")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -10.7, 1.987, 47.714)
+
+[node name="Marque" type="GPUParticles3D" parent="DoublePetiteRangée2/PetiteRangéeServeur2/Contaminé1" unique_id=2058999701]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.29582095, 0.30244827)
+amount = 20
+lifetime = 2.0
+fixed_fps = 20
+process_material = SubResource("ParticleProcessMaterial_cj5kg")
+draw_pass_1 = SubResource("SphereMesh_5d6jn")
 
 [node name="Serveur14" parent="DoublePetiteRangée2/PetiteRangéeServeur2" unique_id=602327289 instance=ExtResource("1_cj5kg")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -9.2, 1.987, 47.714)
@@ -1373,8 +1424,16 @@ transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -16.
 [node name="Serveur10" parent="DoublePetiteRangée5/PetiteRangéeServeur3" unique_id=1326386557 instance=ExtResource("1_cj5kg")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -15.2, 1.987, 47.714)
 
-[node name="Serveur11" parent="DoublePetiteRangée5/PetiteRangéeServeur3" unique_id=884418733 instance=ExtResource("1_cj5kg")]
+[node name="Contaminé2" parent="DoublePetiteRangée5/PetiteRangéeServeur3" unique_id=884418733 instance=ExtResource("1_cj5kg")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -13.7, 1.987, 47.714)
+
+[node name="Marque" type="GPUParticles3D" parent="DoublePetiteRangée5/PetiteRangéeServeur3/Contaminé2" unique_id=953904497]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.29582095, 0.30244827)
+amount = 20
+lifetime = 2.0
+fixed_fps = 20
+process_material = SubResource("ParticleProcessMaterial_cj5kg")
+draw_pass_1 = SubResource("SphereMesh_5d6jn")
 
 [node name="Serveur12" parent="DoublePetiteRangée5/PetiteRangéeServeur3" unique_id=139366358 instance=ExtResource("1_cj5kg")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -12.2, 1.987, 47.714)
