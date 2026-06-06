@@ -7,11 +7,11 @@
 [ext_resource type="PackedScene" uid="uid://dvrrmmj0ggotw" path="res://plateforme.tscn" id="4_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://brys2yeqadfyt" path="res://neurone.tscn" id="5_lquwl"]
 [ext_resource type="PackedScene" uid="uid://wc1v6xirj0o1" path="res://transition_histoire.tscn" id="6_7mycd"]
-[ext_resource type="Script" uid="uid://b117u47pqpd5b" path="res://FinParcours.gd" id="6_dg77c"]
+[ext_resource type="Script" path="res://FinParcours.gd" id="6_dg77c"]
 [ext_resource type="PackedScene" uid="uid://iopx2ro8tdua" path="res://quiz.tscn" id="7_5vw27"]
 [ext_resource type="PackedScene" uid="uid://bj75ufv15apfn" path="res://labyrinthe.tscn" id="8_kek77"]
-[ext_resource type="Script" uid="uid://cieiket73v4j1" path="res://FinQuiz.gd" id="9_efxa6"]
-[ext_resource type="Script" uid="uid://dv7sp83l8hbtd" path="res://FinLabyrinthe.gd" id="10_4c57u"]
+[ext_resource type="Script" path="res://FinQuiz.gd" id="9_efxa6"]
+[ext_resource type="Script" path="res://FinLabyrinthe.gd" id="10_4c57u"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_0xm2m"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -47,7 +47,7 @@ shadow_enabled = true
 environment = SubResource("Environment_1bvp3")
 
 [node name="Player" parent="." unique_id=366096363 instance=ExtResource("2_h2yge")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 117.25895, -9.356749, -93.846436)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 117.25895, -9.356749, -90.83057)
 
 [node name="CanvasLayer" parent="Player" unique_id=565537606 instance=ExtResource("2_7mycd")]
 
