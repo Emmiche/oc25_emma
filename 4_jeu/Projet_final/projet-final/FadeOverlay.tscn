@@ -75,6 +75,7 @@ offset_left = -30.0
 offset_top = -30.0
 offset_right = 1186.0
 offset_bottom = 692.0
+mouse_filter = 2
 color = Color(0, 0, 0, 1)
 
 [node name="FadeAnimationPlayer" type="AnimationPlayer" parent="." unique_id=2099754274]

@@ -18,15 +18,7 @@ var rotation_x := 0.0 # rotation camera
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED) # capture la souris dans la fenêtre
 	
-	# $CanvasLayer/FadeAnimationPlayer.play("FadeIn")
-	
-	print("PLAYER READY")
-	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	
-	print("Camera :", $PivotCamera/Camera3D)
-
-	print("Current :", $PivotCamera/Camera3D.current)
-
+	$CanvasLayer/FadeAnimationPlayer.play("FadeIn")
 
 
 
@@ -46,8 +38,6 @@ func _unhandled_input(event):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
  
 func _physics_process(delta):
-	
-	print("PLAYER PHYSICS")
 
 	if not is_on_floor():
 		velocity.y -= gravity * delta
