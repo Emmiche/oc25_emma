@@ -1,11 +1,15 @@
 extends Node
 
+var labyrinthe_fini = false
+var quiz_fini = false
+var parcours_fini = false
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+# @onready var animation_player = $"../AnimationPlayer"
 
+func verifier_fin():
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+	if labyrinthe_fini and quiz_fini and parcours_fini:
+
+		print("Tous les niveaux terminés !")
+
+		# animation_player.play("AnimationFinale")
