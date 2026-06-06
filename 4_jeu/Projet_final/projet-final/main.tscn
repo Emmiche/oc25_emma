@@ -23,7 +23,7 @@ tonemap_mode = 2
 glow_enabled = true
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5vw27"]
-size = Vector3(8.870422, 4.803589, 7.171753)
+size = Vector3(8.870422, 5.2766724, 7.171753)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_kek77"]
 size = Vector3(10.062225, 9.74054, 13.967743)
@@ -45,7 +45,8 @@ environment = SubResource("Environment_1bvp3")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.811935, 3.2610092, 44.559593)
 
 [node name="Player" parent="." unique_id=366096363 instance=ExtResource("2_h2yge")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 116.02105, -11.539162, -93.846436)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 117.25895, -10.827735, -93.846436)
+script = null
 
 [node name="CanvasLayer" parent="Player" unique_id=565537606 instance=ExtResource("2_7mycd")]
 
@@ -59,7 +60,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 302.84067, -22.73634, -134.19
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.555687, -40.054398)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Plateforme/Area3D" unique_id=1216726035]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.084747314, 0.99798584, -0.7437134)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.084747314, 1.2345276, -0.7437134)
 shape = SubResource("BoxShape3D_5vw27")
 
 [node name="Neurone" parent="." unique_id=1044392086 instance=ExtResource("5_lquwl")]
