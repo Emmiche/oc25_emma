@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bs72ogkvdd7d6"]
 
 [ext_resource type="Script" uid="uid://ujhinrx0e0im" path="res://addons/proto_controller2/Player.gd" id="1_ucva2"]
+[ext_resource type="PackedScene" uid="uid://cwwg6pmwdkrx7" path="res://FadeOverlay.tscn" id="2_fade"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iof21"]
 albedo_color = Color(0.6154432, 0.304456, 0, 1)
@@ -31,3 +32,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 0)
 
 [node name="Camera3D" type="Camera3D" parent="PivotCamera" unique_id=1207653143]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.12164807, 0)
+current = true
+
+[node name="CanvasLayer" parent="." instance=ExtResource("2_fade")]
+unique_id=101010101
+
