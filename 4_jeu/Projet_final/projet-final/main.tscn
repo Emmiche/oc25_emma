@@ -32,7 +32,8 @@ environment = SubResource("Environment_1bvp3")
 
 [node name="ProtoController" parent="." unique_id=2021529420 instance=ExtResource("2_h2yge")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.811935, 3.2610092, 44.559593)
-[node name="Player" parent="." unique_id=2021529420 instance=ExtResource("2_h2yge")]
+
+[node name="Player" parent="." unique_id=366096363 instance=ExtResource("2_h2yge")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 116.02105, -11.539162, -93.846436)
 
 [node name="CanvasLayer" parent="Player" unique_id=565537606 instance=ExtResource("2_7mycd")]
@@ -54,3 +55,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.562681, -12.870675, -58.30
 
 [node name="TeleportPoint2" type="Marker3D" parent="." unique_id=1694336254]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44.20967, 1.8352013, 43.7911)
+
+[node name="TeleportPoint3" type="Marker3D" parent="." unique_id=291253251]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 302.94354, -18.056625, -133.77565)
