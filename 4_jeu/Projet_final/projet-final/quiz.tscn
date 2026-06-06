@@ -7,6 +7,7 @@ albedo_color = Color(0.35606432, 0.35606432, 0.35606432, 1)
 albedo_color = Color(18.892157, 0, 0, 1)
 
 [node name="quiz" type="CSGCombiner3D" unique_id=1284955669]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 39, 0)
 use_collision = true
 
 [node name="sol" type="CSGBox3D" parent="." unique_id=529388786]
@@ -20,6 +21,7 @@ material = SubResource("StandardMaterial3D_wi6su")
 
 [node name="toit" type="CSGBox3D" parent="." unique_id=15656375]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 14.96405, 0)
+visible = false
 size = Vector3(100, 1, 15)
 material = SubResource("StandardMaterial3D_wi6su")
 
@@ -257,3 +259,108 @@ size = Vector3(2.0061035, 4.1348877, 8.910599)
 transform = Transform3D(1, 0, 0, 0, 0.8659119, -0.5001966, 0, 0.5001966, 0.8659119, 0.043762207, 1.9774648, 2.2732956)
 operation = 2
 size = Vector3(1.9185791, 4.888855, 7.920471)
+
+[node name="Question1" type="Label3D" parent="." unique_id=1449233800]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -38.238148, 7.6725655, -0.026022196)
+text = "Que signifie l'acronyme LLM ?"
+font_size = 60
+
+[node name="Réponse1" type="Label3D" parent="Question1" unique_id=1692712647]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.807, -1.726, 0)
+text = "Limited Logic Machine"
+font_size = 50
+
+[node name="Réponse2" type="Label3D" parent="Question1" unique_id=726831611]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7994945, -1.7257805, 0)
+text = "Large Language Model"
+font_size = 50
+
+[node name="Question2" type="Label3D" parent="." unique_id=77966734]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -27.515123, 7.6725655, -0.026022196)
+text = "Quel est le rôle principal d'un LLM ?"
+font_size = 60
+
+[node name="Réponse1" type="Label3D" parent="Question2" unique_id=674785862]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.807, -1.726, 0)
+text = "Réparer du matériel informatique"
+font_size = 50
+
+[node name="Réponse2" type="Label3D" parent="Question2" unique_id=1577072282]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7994945, -1.7257805, 0)
+text = "Générer et comprendre du texte"
+font_size = 50
+
+[node name="Question3" type="Label3D" parent="." unique_id=1043284982]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -16.581413, 7.6725655, -0.026022196)
+text = "L'entraide entre utilisateurs et IA peut permettre de :"
+font_size = 60
+
+[node name="Réponse1" type="Label3D" parent="Question3" unique_id=732275355]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.807, -1.726, 0)
+text = "Résoudre des problèmes plus rapidement"
+font_size = 50
+
+[node name="Réponse2" type="Label3D" parent="Question3" unique_id=456525742]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7994945, -1.7257805, 0)
+text = "Supprimer automatiquement tous les problèmes"
+font_size = 50
+
+[node name="Question4" type="Label3D" parent="." unique_id=1089422611]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -5.296974, 7.6725655, -0.026022196)
+text = "Un LLM apprend principalement à partir de :"
+font_size = 60
+
+[node name="Réponse1" type="Label3D" parent="Question4" unique_id=1342334432]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.807, -1.726, 0)
+text = "Signaux GPS"
+font_size = 50
+
+[node name="Réponse2" type="Label3D" parent="Question4" unique_id=499093166]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7994945, -1.7257805, 0)
+text = "Grandes quantités de textes"
+font_size = 50
+
+[node name="Question5" type="Label3D" parent="." unique_id=258350284]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 5.797119, 7.6725655, -0.026022196)
+text = "Lorsqu'une IA aide à rédiger un document, il est conseillé de :"
+font_size = 60
+
+[node name="Réponse1" type="Label3D" parent="Question5" unique_id=1021330492]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.807, -1.726, 0)
+text = "Vérifer les informations fournies"
+font_size = 50
+
+[node name="Réponse2" type="Label3D" parent="Question5" unique_id=879946169]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7994945, -1.7257805, 0)
+text = "Tout accepter sans relire"
+font_size = 50
+
+[node name="Question6" type="Label3D" parent="." unique_id=935633177]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 19.016026, 7.6725655, -0.026022196)
+text = "Quelle est la bonne pratique lorsqu'on demande de l'aide à une IA ?"
+font_size = 60
+
+[node name="Réponse1" type="Label3D" parent="Question6" unique_id=1896693546]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.807, -1.726, 0)
+text = "Fournir le moins d'informations possible"
+font_size = 50
+
+[node name="Réponse2" type="Label3D" parent="Question6" unique_id=574483158]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7994945, -1.7257805, 0)
+text = "Donner un contexte clair et précis"
+font_size = 50
+
+[node name="Question7" type="Label3D" parent="." unique_id=1911797735]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 31.260002, 7.6725655, -0.026022196)
+text = "Un LLM comprend-il le monde exactement comme un humain ?"
+font_size = 60
+
+[node name="Réponse1" type="Label3D" parent="Question7" unique_id=845174438]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.807, -1.726, 0)
+text = "Oui, de façon identique à un humain"
+font_size = 50
+
+[node name="Réponse2" type="Label3D" parent="Question7" unique_id=1953676118]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7994945, -1.7257805, 0)
+text = "Non, il traite des modèles dans des données"
+font_size = 50
