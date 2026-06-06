@@ -203,6 +203,20 @@ spot_range = 8.766338
 spot_attenuation = -0.79
 spot_angle = 12.876276
 
+[node name="SpotLight3D2" type="SpotLight3D" parent="Salles" unique_id=1349638782]
+transform = Transform3D(1, 0, 0, 0, -0.024240192, 0.9997062, 0, -0.9997062, -0.024240192, -44.861534, 8.296748, 45.838722)
+light_color = Color(1, 1, 0.2509804, 1)
+spot_range = 8.766338
+spot_attenuation = -0.79
+spot_angle = 12.876276
+
+[node name="SpotLight3D3" type="SpotLight3D" parent="Salles" unique_id=110092611]
+transform = Transform3D(1, 0, 0, 0, -0.024240192, 0.9997062, 0, -0.9997062, -0.024240192, -35.633812, 8.296748, 42.7587)
+light_color = Color(1, 1, 0.2509804, 1)
+spot_range = 8.766338
+spot_attenuation = -0.79
+spot_angle = 12.876276
+
 [node name="MiniMur" type="CSGBox3D" parent="Salles" unique_id=440805238]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.867615, 5.338869, 35.097057)
 size = Vector3(20, 10, 1)
@@ -242,7 +256,7 @@ size = Vector3(1.4, 2.2, 1)
 material = SubResource("StandardMaterial3D_opcvf")
 
 [node name="Bureau" type="CSGCombiner3D" parent="Salles" unique_id=1304722987]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44.305653, 0.42001188, 47.820305)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44.305653, 0.42001188, 46.901875)
 
 [node name="Pied" type="CSGBox3D" parent="Salles/Bureau" unique_id=1905442592]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5845938, 0)
@@ -346,7 +360,7 @@ transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, -0.2687683, 1
 size = Vector3(0.4, 0.02, 0.15)
 
 [node name="Bureau2" type="CSGCombiner3D" parent="Salles" unique_id=1423083629]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.72158, 0.42001188, 43.361805)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.432423, 0.42001188, 43.361805)
 
 [node name="Pied" type="CSGBox3D" parent="Salles/Bureau2" unique_id=499451952]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5845938, 0)
@@ -410,7 +424,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2675476, 1.4784566, -1.094
 size = Vector3(0.5, 0.01, 0.2)
 
 [node name="EcransSurveillance" type="CSGCombiner3D" parent="Salles" unique_id=141285067]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.35, 0, -0.6103096)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.35, 0, -1.0483589)
 
 [node name="Ecran" type="CSGBox3D" parent="Salles/EcransSurveillance" unique_id=1953809903]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.300426, 3.9252934, 48.98499)
@@ -463,7 +477,7 @@ size = Vector3(1.5, 1, 0.1)
 material = SubResource("StandardMaterial3D_fk43w")
 
 [node name="Chaise" type="CSGCombiner3D" parent="Salles" unique_id=2084520645]
-transform = Transform3D(-0.60469645, 0, -0.79645604, 0, 1, 0, 0.79645604, 0, -0.60469645, -46.038128, 1.1709168, 46.039677)
+transform = Transform3D(-0.60469645, 0, -0.79645604, 0, 1, 0, 0.79645604, 0, -0.60469645, -46.038128, 1.1709168, 45.09911)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Salles/Chaise" unique_id=1098925760]
 size = Vector3(1, 0.1, 1)
@@ -514,7 +528,7 @@ radius = 0.06347881
 material = SubResource("StandardMaterial3D_thwj7")
 
 [node name="Chaise2" type="CSGCombiner3D" parent="Salles" unique_id=286252360]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -35.791935, 1.1709168, 42.249767)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -35.59165, 1.1709168, 42.249767)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Salles/Chaise2" unique_id=364500192]
 size = Vector3(1, 0.1, 1)
@@ -799,6 +813,10 @@ mesh = SubResource("PrismMesh_iveb2")
 [node name="CSGMesh3D5" type="CSGMesh3D" parent="Salles/DrapeauChine2/Etoile5" unique_id=198828468]
 transform = Transform3D(0.39982578, 0.91659075, -0.0008356422, -0.91614085, 0.3996006, -0.031705435, -0.028727002, 0.013442261, 0.99949706, 0.27284682, -0.1307782, 0)
 mesh = SubResource("PrismMesh_iveb2")
+
+[node name="Label3D" type="Label3D" parent="Salles" unique_id=475876396]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -35.668133, 2.7250593, 40.16119)
+text = "Le système de surveillance ne fonctionne plus"
 
 [node name="PetiteRangéeServeur" type="CSGCombiner3D" parent="." unique_id=867785003]
 
@@ -1676,4 +1694,4 @@ transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -10.
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -9.2, 1.987, 47.714)
 
 [node name="Serveur" parent="." unique_id=255803961 instance=ExtResource("1_cj5kg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -42.602287, 1.9999976, 47.93406)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -42.602287, 1.9999976, 47.599655)
