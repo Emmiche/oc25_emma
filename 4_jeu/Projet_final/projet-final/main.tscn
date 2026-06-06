@@ -47,7 +47,7 @@ shadow_enabled = true
 environment = SubResource("Environment_1bvp3")
 
 [node name="Player" parent="." unique_id=366096363 instance=ExtResource("2_h2yge")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 117.25895, -10.827735, -93.846436)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 117.25895, -9.356749, -93.846436)
 
 [node name="CanvasLayer" parent="Player" unique_id=565537606 instance=ExtResource("2_7mycd")]
 
