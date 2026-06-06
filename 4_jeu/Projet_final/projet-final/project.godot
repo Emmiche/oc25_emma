@@ -11,13 +11,17 @@ config_version=5
 [application]
 
 config/name="Projet_final"
-run/main_scene="uid://bj75ufv15apfn"
+run/main_scene="uid://biw1ex41tk5tf"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
 GameManager="*uid://cp8ii0olhsd0p"
+
+[dotnet]
+
+project/assembly_name="Projet_final"
 
 [input]
 
