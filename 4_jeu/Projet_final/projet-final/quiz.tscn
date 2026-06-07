@@ -1,7 +1,57 @@
 [gd_scene format=3 uid="uid://iopx2ro8tdua"]
 
+[ext_resource type="Texture2D" uid="uid://bu15g031ldwv7" path="res://addons/Meme/IMG_6035.JPG" id="1_kninm"]
+[ext_resource type="Texture2D" uid="uid://dg3foqvduncl4" path="res://addons/Meme/IMG_6036.JPG" id="2_k7kv1"]
+[ext_resource type="Texture2D" uid="uid://dedvau5pfms6e" path="res://addons/Meme/IMG_6029.JPG" id="3_i0i4q"]
+[ext_resource type="Texture2D" uid="uid://crtapflrkekww" path="res://addons/Meme/IMG_6034.JPG" id="4_rmnlm"]
+[ext_resource type="Texture2D" uid="uid://bagy3t5eyhctx" path="res://addons/Meme/IMG_6028.JPG" id="5_ngcn3"]
+[ext_resource type="Texture2D" uid="uid://bsnrqtni3rrye" path="res://addons/Meme/IMG_6025.JPG" id="6_hgkws"]
+[ext_resource type="Texture2D" uid="uid://cumnpg3jehiw1" path="res://addons/Meme/IMG_6031.JPG" id="7_6id1c"]
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wi6su"]
 albedo_color = Color(0.35606432, 0.35606432, 0.35606432, 1)
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_k7kv1"]
+albedo_texture = ExtResource("1_kninm")
+
+[sub_resource type="QuadMesh" id="QuadMesh_i0i4q"]
+material = SubResource("ORMMaterial3D_k7kv1")
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_i0i4q"]
+albedo_texture = ExtResource("2_k7kv1")
+
+[sub_resource type="QuadMesh" id="QuadMesh_rmnlm"]
+material = SubResource("ORMMaterial3D_i0i4q")
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_rmnlm"]
+albedo_texture = ExtResource("3_i0i4q")
+
+[sub_resource type="QuadMesh" id="QuadMesh_ngcn3"]
+material = SubResource("ORMMaterial3D_rmnlm")
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_ngcn3"]
+albedo_texture = ExtResource("4_rmnlm")
+
+[sub_resource type="QuadMesh" id="QuadMesh_hgkws"]
+material = SubResource("ORMMaterial3D_ngcn3")
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_hgkws"]
+albedo_texture = ExtResource("5_ngcn3")
+
+[sub_resource type="QuadMesh" id="QuadMesh_6id1c"]
+material = SubResource("ORMMaterial3D_hgkws")
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_6id1c"]
+albedo_texture = ExtResource("6_hgkws")
+
+[sub_resource type="QuadMesh" id="QuadMesh_p60ki"]
+material = SubResource("ORMMaterial3D_6id1c")
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_p60ki"]
+albedo_texture = ExtResource("7_6id1c")
+
+[sub_resource type="QuadMesh" id="QuadMesh_ffm0p"]
+material = SubResource("ORMMaterial3D_p60ki")
 
 [node name="quiz" type="CSGCombiner3D" unique_id=1284955669]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 39, 0)
@@ -145,6 +195,10 @@ size = Vector3(5.848633, 15.146545, 2.102295)
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.8713684, 0, -0.5448723)
 size = Vector3(18.56435, 15.146545, 2.102295)
 
+[node name="CSGBox3D" type="MeshInstance3D" parent="MiniMur/MiniMur8" unique_id=1845565682]
+transform = Transform3D(0.014485762, 0, -0.9998951, 0, 1, 0, 0.9998951, 0, 0.014485762, 8.541034, -5.593464, -2.7154045)
+mesh = SubResource("QuadMesh_i0i4q")
+
 [node name="MiniMur2" type="CSGBox3D" parent="." unique_id=1972533483]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.584642, 7.822151, -0.34438658)
 size = Vector3(5.70166, 15.146545, 2.102295)
@@ -152,6 +206,10 @@ size = Vector3(5.70166, 15.146545, 2.102295)
 [node name="MiniMur8" type="CSGBox3D" parent="MiniMur2" unique_id=265988914]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.8713684, 0, -0.5448723)
 size = Vector3(18.56435, 15.146545, 2.102295)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="MiniMur2/MiniMur8" unique_id=265789347]
+transform = Transform3D(-0.01829002, 0, -0.99983275, 0, 1, 0, 0.99983275, 0, -0.01829002, 8.527246, -5.353443, -2.6152382)
+mesh = SubResource("QuadMesh_rmnlm")
 
 [node name="MiniMur3" type="CSGBox3D" parent="." unique_id=472553463]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.46822, 7.822151, -0.34438658)
@@ -161,6 +219,10 @@ size = Vector3(5.848633, 15.146545, 2.102295)
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.8713684, 0, 1.3896608)
 size = Vector3(18.56435, 15.146545, 2.102295)
 
+[node name="MeshInstance3D" type="MeshInstance3D" parent="MiniMur3/MiniMur8" unique_id=472895442]
+transform = Transform3D(-0.0028099222, 0, 0.99999607, 0, 1, 0, -0.99999607, 0, -0.0028099222, -8.729376, -5.261318, -2.838891)
+mesh = SubResource("QuadMesh_ngcn3")
+
 [node name="MiniMur4" type="CSGBox3D" parent="." unique_id=9158487]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1962, 7.822151, -0.34438658)
 size = Vector3(5.848633, 15.146545, 2.102295)
@@ -168,6 +230,10 @@ size = Vector3(5.848633, 15.146545, 2.102295)
 [node name="MiniMur8" type="CSGBox3D" parent="MiniMur4" unique_id=813672833]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.8713684, 0, -0.5448723)
 size = Vector3(18.56435, 15.146545, 2.102295)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="MiniMur4/MiniMur8" unique_id=757051926]
+transform = Transform3D(0.00280998, 0, -0.9999961, 0, 1, 0, 0.9999961, 0, 0.00280998, 8.508659, -5.7039986, -2.7496247)
+mesh = SubResource("QuadMesh_hgkws")
 
 [node name="MiniMur5" type="CSGBox3D" parent="." unique_id=1170233469]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.001127, 7.822151, -0.34438658)
@@ -177,6 +243,10 @@ size = Vector3(5.848633, 15.146545, 2.102295)
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.8713684, 0, 1.3359528)
 size = Vector3(18.56435, 15.146545, 2.102295)
 
+[node name="MeshInstance3D" type="MeshInstance3D" parent="MiniMur5/MiniMur8" unique_id=75661415]
+transform = Transform3D(0.0054279556, 0, 0.9999853, 0, 1, 0, -0.9999853, 0, 0.0054279556, -8.7976465, -5.5714684, -2.9048371)
+mesh = SubResource("QuadMesh_6id1c")
+
 [node name="MiniMur6" type="CSGBox3D" parent="." unique_id=47625447]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.219013, 7.822151, -0.34438658)
 size = Vector3(5.848633, 15.146545, 2.102295)
@@ -185,6 +255,10 @@ size = Vector3(5.848633, 15.146545, 2.102295)
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.8713684, 0, -0.5448723)
 size = Vector3(18.56435, 15.146545, 2.102295)
 
+[node name="MeshInstance3D" type="MeshInstance3D" parent="MiniMur6/MiniMur8" unique_id=1952426728]
+transform = Transform3D(-0.0058467938, 0, -0.9999829, 0, 1, 0, 0.9999829, 0, -0.0058467938, 8.503646, -5.1483917, -2.739565)
+mesh = SubResource("QuadMesh_p60ki")
+
 [node name="MiniMur7" type="CSGBox3D" parent="." unique_id=1821403655]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.999943, 7.822151, -0.34438658)
 size = Vector3(2.6875, 15.146545, 2.102295)
@@ -192,6 +266,10 @@ size = Vector3(2.6875, 15.146545, 2.102295)
 [node name="MiniMur8" type="CSGBox3D" parent="MiniMur7" unique_id=1718489517]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.8713684, 0, -0.5448723)
 size = Vector3(18.56435, 15.146545, 2.102295)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="MiniMur7/MiniMur8" unique_id=1608282473]
+transform = Transform3D(0.0073303645, 0, -0.9999732, 0, 1, 0, 0.9999732, 0, 0.0073303645, 8.522468, -5.9238434, -2.1460876)
+mesh = SubResource("QuadMesh_ffm0p")
 
 [node name="escaliers" type="CSGBox3D" parent="." unique_id=399296680]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.08498, -2.3209047, -2.2558675)
