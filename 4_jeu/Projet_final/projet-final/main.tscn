@@ -107,9 +107,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -63.00898, 0.36442566, -52.08
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1811656339]
 
 [node name="AnimationFinale" type="VideoStreamPlayer" parent="CanvasLayer" unique_id=316127351]
-offset_right = 3840.0
-offset_bottom = 2160.0
+offset_left = -40.0
+offset_top = -32.0
+offset_right = 1190.0
+offset_bottom = 708.0
 stream = ExtResource("9_kek77")
+expand = true
 
 [connection signal="body_entered" from="labyrinthe/FinLabyrinthe" to="labyrinthe/FinLabyrinthe" method="_on_body_entered"]
 [connection signal="body_exited" from="labyrinthe/FinLabyrinthe" to="labyrinthe/FinLabyrinthe" method="_on_body_exited"]
