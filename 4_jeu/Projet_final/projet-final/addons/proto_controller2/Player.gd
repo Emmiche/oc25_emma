@@ -83,15 +83,30 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("teleport1"):
 		teleport_to("TeleportPoint1")
 
-		
+	# téléportation data center
 	if Input.is_action_just_pressed("teleport2"):
 		teleport2_to("TeleportPoint2")
 		
+	# téléportation quiz
 	if Input.is_action_just_pressed("teleport3"):
 		teleport3_to("TeleportPoint3")
 
+	# téléportation parcours/plateforme
+	if Input.is_action_just_pressed("teleport4"):
+		teleport4_to("TeleportPoint4")	
 		
+	# téléportation labyrinthe
+	if Input.is_action_just_pressed("teleport5"):
+		teleport5_to("TeleportPoint5")	
 		
+	if Input.is_action_just_pressed("teleport6"):
+		teleport6_to("TeleportPoint6")	
+		
+	if Input.is_action_just_pressed("teleport7"):
+		teleport7_to("TeleportPoint7")	
+		
+	if Input.is_action_just_pressed("teleport8"):
+		teleport8_to("TeleportPoint8")	
 
 	move_and_slide()
 
@@ -142,6 +157,91 @@ func teleport3_to(TeleportPoint3):
 
 	# téléporter
 	global_position = get_parent().get_node(TeleportPoint3).global_position
+
+	# fade retour
+	$CanvasLayer/FadeAnimationPlayer.play("FadeIn")
+	
+func teleport4_to(TeleportPoint4):
+
+	# fade noir
+	$CanvasLayer/FadeAnimationPlayer.play("FadeOut")
+
+	# attendre fin animation
+	await $CanvasLayer/FadeAnimationPlayer.animation_finished
+
+	# arrêter le mouvement
+	velocity = Vector3.ZERO
+
+	# téléporter
+	global_position = get_parent().get_node(TeleportPoint4).global_position
+
+	# fade retour
+	$CanvasLayer/FadeAnimationPlayer.play("FadeIn")
+	
+func teleport5_to(TeleportPoint5):
+
+	# fade noir
+	$CanvasLayer/FadeAnimationPlayer.play("FadeOut")
+
+	# attendre fin animation
+	await $CanvasLayer/FadeAnimationPlayer.animation_finished
+
+	# arrêter le mouvement
+	velocity = Vector3.ZERO
+
+	# téléporter
+	global_position = get_parent().get_node(TeleportPoint5).global_position
+
+	# fade retour
+	$CanvasLayer/FadeAnimationPlayer.play("FadeIn")
+	
+func teleport6_to(TeleportPoint6):
+
+	# fade noir
+	$CanvasLayer/FadeAnimationPlayer.play("FadeOut")
+
+	# attendre fin animation
+	await $CanvasLayer/FadeAnimationPlayer.animation_finished
+
+	# arrêter le mouvement
+	velocity = Vector3.ZERO
+
+	# téléporter
+	global_position = get_parent().get_node(TeleportPoint6).global_position
+
+	# fade retour
+	$CanvasLayer/FadeAnimationPlayer.play("FadeIn")
+	
+func teleport7_to(TeleportPoint7):
+
+	# fade noir
+	$CanvasLayer/FadeAnimationPlayer.play("FadeOut")
+
+	# attendre fin animation
+	await $CanvasLayer/FadeAnimationPlayer.animation_finished
+
+	# arrêter le mouvement
+	velocity = Vector3.ZERO
+
+	# téléporter
+	global_position = get_parent().get_node(TeleportPoint7).global_position
+
+	# fade retour
+	$CanvasLayer/FadeAnimationPlayer.play("FadeIn")
+	
+func teleport8_to(TeleportPoint8):
+
+	# fade noir
+	$CanvasLayer/FadeAnimationPlayer.play("FadeOut")
+
+	# attendre fin animation
+	await $CanvasLayer/FadeAnimationPlayer.animation_finished
+
+	# arrêter le mouvement
+	velocity = Vector3.ZERO
+
+	# téléporter
+	global_position = get_parent().get_node(TeleportPoint8).global_position
 
 	# fade retour
 	$CanvasLayer/FadeAnimationPlayer.play("FadeIn")

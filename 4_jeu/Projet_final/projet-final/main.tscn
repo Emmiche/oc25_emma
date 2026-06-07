@@ -57,13 +57,45 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10746539, 0, -1.2144728)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.969313, 1.7499924, 10.215578)
 
 [node name="TeleportPoint1" type="Node3D" parent="." unique_id=26036466]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 108.64486, 5.895897, 5.6738086)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.461145, 1.4707928, -26.623926)
 
 [node name="TeleportPoint2" type="Node3D" parent="." unique_id=1130426751]
-transform = Transform3D(-0.22466189, 0, 0.97443676, 0, 1, 0, -0.97443676, 0, -0.22466189, 48.218018, 1.8376808, 3.0808458)
+transform = Transform3D(-0.22466189, 0, 0.97443676, 0, 1, 0, -0.97443676, 0, -0.22466189, -44.765594, 1.8376808, 44.324627)
 
 [node name="TeleportPoint3" type="Node3D" parent="." unique_id=170269556]
-transform = Transform3D(-0.22466189, 0, 0.97443676, 0, 1, 0, -0.97443676, 0, -0.22466189, 221.37788, 6.5048447, 36.05194)
+transform = Transform3D(-0.22466189, 0, 0.97443676, 0, 1, 0, -0.97443676, 0, -0.22466189, 150.66646, 6.5048447, 34.750935)
+
+[node name="TeleportPoint4" type="Node3D" parent="." unique_id=1094739533]
+transform = Transform3D(-0.22466189, 0, 0.97443676, 0, 1, 0, -0.97443676, 0, -0.22466189, 108.887596, 5.7183, 35.694603)
+
+[node name="TeleportPoint5" type="Node3D" parent="." unique_id=489429278]
+transform = Transform3D(-0.22466189, 0, 0.97443676, 0, 1, 0, -0.97443676, 0, -0.22466189, 53.573036, 1.0224209, 26.254759)
+
+[node name="TeleportPoint6" type="Node3D" parent="." unique_id=1533856105]
+transform = Transform3D(-0.22466189, 0, 0.97443676, 0, 1, 0, -0.97443676, 0, -0.22466189, -13.017704, 1.7921524, 12.708767)
+
+[node name="Label3D" type="Label3D" parent="TeleportPoint6" unique_id=1251768028]
+transform = Transform3D(0.2525422, 0, 0.96758586, 0, 1, 0, -0.96758586, 0, 0.2525422, -2.1239138, 0, -0.39352322)
+text = "Appuyer sur Q pour chercher les données dans le GPU"
+font_size = 10
+
+[node name="TeleportPoint7" type="Node3D" parent="." unique_id=1865432798]
+transform = Transform3D(0.018237613, 0, -0.99983376, 0, 1, 0, 0.99983376, 0, 0.018237613, -37.294758, 1.7921524, 6.425389)
+
+[node name="Label3D" type="Label3D" parent="TeleportPoint7" unique_id=389377824]
+transform = Transform3D(0.2525422, 0, 0.96758586, 0, 1, 0, -0.96758586, 0, 0.2525422, -2.1239138, 0, -0.39352322)
+text = "Appuyer sur L pour chercher les données
+dans le GPU"
+font_size = 10
+
+[node name="TeleportPoint8" type="Node3D" parent="." unique_id=1319631715]
+transform = Transform3D(0.018237613, 0, -0.99983376, 0, 1, 0, 0.99983376, 0, 0.018237613, -25.29526, 1.7921524, 38.776287)
+
+[node name="Label3D" type="Label3D" parent="TeleportPoint8" unique_id=2138071974]
+transform = Transform3D(0.2525422, 0, 0.96758586, 0, 1, 0, -0.96758586, 0, 0.2525422, -2.1239138, 0, -0.39352322)
+text = "Appuyer sur P pour chercher les données
+dans le GPU"
+font_size = 10
 
 [node name="labyrinthe" parent="." unique_id=628365901 instance=ExtResource("4_1bvp3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.3028, -0.9971924, 3.4701228)
@@ -76,6 +108,12 @@ script = ExtResource("5_dg77c")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.19595337, -2.3363094, 0.013305664)
 shape = SubResource("BoxShape3D_1bvp3")
 
+[node name="Label3D2" type="Label3D" parent="labyrinthe" unique_id=1992313732]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.9150505, -6.3466444, -1.1399343)
+text = "Appuyez sur E pour récupérer les données
+Puis appuyer sur ? pour sortir"
+font_size = 20
+
 [node name="Plateforme" parent="labyrinthe" unique_id=146931932 instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 67.76222, 1.9363747, 32.26842)
 
@@ -87,11 +125,23 @@ script = ExtResource("7_ycdy4")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.083984375, 1.8312073, 3.38226)
 shape = SubResource("BoxShape3D_kek77")
 
+[node name="Label3D" type="Label3D" parent="labyrinthe/Plateforme" unique_id=1300275367]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.100479126, 3.6304932, -44.145718)
+text = "Appuyez sur E pour récupérer les données
+Puis appuyer sur H pour sortir"
+font_size = 20
+
 [node name="Neurone" parent="labyrinthe" unique_id=1044392086 instance=ExtResource("6_272bh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -64.85387, 1.9626961, -97.079506)
 
 [node name="quiz" parent="labyrinthe" unique_id=1284955669 instance=ExtResource("7_5vw27")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152.27852, 4.2804832, 32.291344)
+
+[node name="Label3D" type="Label3D" parent="labyrinthe/quiz" unique_id=1722755281]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 49.069397, 1.3814697, -0.24855804)
+text = "Appuyez sur E pour récupérer les données
+Puis appuyer sur ? pour sortir"
+font_size = 20
 
 [node name="FinQuiz" type="Area3D" parent="labyrinthe/quiz" unique_id=1626293666]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.918457, 2.3191338, 0)
