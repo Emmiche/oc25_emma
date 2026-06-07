@@ -236,3 +236,7 @@ omni_range = 3.7241611
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Alarme3/OmniLight3D" unique_id=1987927577]
 root_node = NodePath("../../..")
 libraries/ = SubResource("AnimationLibrary_mwiqi")
+
+[node name="Label3D7" type="Label3D" parent="." unique_id=45331956]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7232859, -0.66241264)
+text = "Appuyer sur Z pour sortir"

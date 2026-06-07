@@ -598,3 +598,7 @@ mesh = SubResource("TextMesh_wyfth")
 [node name="Numéro5_6" type="MeshInstance3D" parent="5Box7/CollisionBox" unique_id=526704777]
 transform = Transform3D(-8.468402e-11, 0.99999815, -0.0019373444, 4.3711307e-08, 0.0019373444, 0.99999815, 1, 0, -4.371139e-08, 0.12714827, -1.3866525, 0.03968239)
 mesh = SubResource("TextMesh_2f7u4")
+
+[node name="Label3D" type="Label3D" parent="." unique_id=636210429]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.70985603, -83.33578)
+text = "Appuyer sur T pour continuer"
