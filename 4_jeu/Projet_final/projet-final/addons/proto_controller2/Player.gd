@@ -86,6 +86,9 @@ func _physics_process(delta):
 		
 	if Input.is_action_just_pressed("teleport2"):
 		teleport2_to("TeleportPoint2")
+		
+	if Input.is_action_just_pressed("teleport3"):
+		teleport3_to("TeleportPoint3")
 
 		
 		
@@ -122,6 +125,23 @@ func teleport2_to(TeleportPoint2):
 
 	# téléporter
 	global_position = get_parent().get_node(TeleportPoint2).global_position
+
+	# fade retour
+	$CanvasLayer/FadeAnimationPlayer.play("FadeIn")
+
+func teleport3_to(TeleportPoint3):
+
+	# fade noir
+	$CanvasLayer/FadeAnimationPlayer.play("FadeOut")
+
+	# attendre fin animation
+	await $CanvasLayer/FadeAnimationPlayer.animation_finished
+
+	# arrêter le mouvement
+	velocity = Vector3.ZERO
+
+	# téléporter
+	global_position = get_parent().get_node(TeleportPoint3).global_position
 
 	# fade retour
 	$CanvasLayer/FadeAnimationPlayer.play("FadeIn")

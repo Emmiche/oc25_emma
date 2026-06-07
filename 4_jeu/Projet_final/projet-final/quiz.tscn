@@ -56,13 +56,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.04076004, -4.9146748, 2.772
 operation = 2
 size = Vector3(0.5055542, 4.82959, 2.0737305)
 
-[node name="CSGBox3D2" type="CSGBox3D" parent="murquiz/mur4" unique_id=1683983290]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.04076004, -4.9002705, -2.783329)
-size = Vector3(0.5055542, 4.8007813, 2.0737305)
-material = SubResource("StandardMaterial3D_kninm")
-
 [node name="CSGBox3D4" type="CSGBox3D" parent="murquiz/mur4" unique_id=997728133]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.04076004, -4.9002705, 2.7618666)
+flip_faces = true
 size = Vector3(0.5055542, 4.8007813, 2.0737305)
 material = SubResource("StandardMaterial3D_kninm")
 
@@ -207,6 +203,7 @@ material = SubResource("StandardMaterial3D_kninm")
 
 [node name="CSGBox3D4" type="CSGBox3D" parent="murquiz/mur10" unique_id=1882584287]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.04076004, -4.9002705, 2.7618666)
+operation = 2
 size = Vector3(0.5055542, 4.8007813, 2.0737305)
 material = SubResource("StandardMaterial3D_kninm")
 
