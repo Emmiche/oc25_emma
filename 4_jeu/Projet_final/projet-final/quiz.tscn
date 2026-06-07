@@ -21,7 +21,6 @@ material = SubResource("StandardMaterial3D_wi6su")
 
 [node name="toit" type="CSGBox3D" parent="." unique_id=15656375]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 14.96405, 0)
-visible = false
 size = Vector3(100, 1, 15)
 material = SubResource("StandardMaterial3D_wi6su")
 
