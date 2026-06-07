@@ -1,10 +1,39 @@
 [gd_scene format=3 uid="uid://bj75ufv15apfn"]
 
+[ext_resource type="Texture2D" uid="uid://bugsil4ic1sv7" path="res://addons/Meme/IMG_6026.JPG" id="1_vouit"]
+[ext_resource type="Texture2D" uid="uid://cy0p2bfioy3we" path="res://addons/Meme/IMG_6027.JPG" id="2_o8rjk"]
+[ext_resource type="Texture2D" uid="uid://iqv67ah6tim2" path="res://addons/Meme/IMG_6030.JPG" id="3_se7lh"]
+[ext_resource type="Texture2D" uid="uid://2b74270wahja" path="res://addons/Meme/IMG_6032.JPG" id="4_r1idg"]
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d3kpe"]
 albedo_color = Color(0.28485027, 0.28485027, 0.28485027, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6sivc"]
 albedo_color = Color(0, 1, 0, 1)
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_t2g6d"]
+albedo_texture = ExtResource("1_vouit")
+
+[sub_resource type="QuadMesh" id="QuadMesh_d3kpe"]
+material = SubResource("ORMMaterial3D_t2g6d")
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_s0y3c"]
+albedo_texture = ExtResource("2_o8rjk")
+
+[sub_resource type="QuadMesh" id="QuadMesh_dg2sp"]
+material = SubResource("ORMMaterial3D_s0y3c")
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_faliv"]
+albedo_texture = ExtResource("3_se7lh")
+
+[sub_resource type="QuadMesh" id="QuadMesh_fdhbr"]
+material = SubResource("ORMMaterial3D_faliv")
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_dgi3l"]
+albedo_texture = ExtResource("4_r1idg")
+
+[sub_resource type="QuadMesh" id="QuadMesh_nx02p"]
+material = SubResource("ORMMaterial3D_dgi3l")
 
 [node name="labyrinthe" type="CSGCombiner3D" unique_id=628365901]
 use_collision = true
@@ -249,3 +278,19 @@ size = Vector3(3.1434479, 7.46875, 0.40344238)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.200901, 7.5933676, 15.160164)
 text = "Trouvez la fin"
 font_size = 100
+
+[node name="Meme4" type="MeshInstance3D" parent="." unique_id=1983798338]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, -2.7344773, 1.489263, -13.931271)
+mesh = SubResource("QuadMesh_d3kpe")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=427873367]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 9.773254, 1.5430224, 6.8686614)
+mesh = SubResource("QuadMesh_dg2sp")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=168133072]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.5676931, 1.4481604, 9.110462)
+mesh = SubResource("QuadMesh_fdhbr")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="." unique_id=179782014]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 1.5028822, 1.2575779, 10.123754)
+mesh = SubResource("QuadMesh_nx02p")
