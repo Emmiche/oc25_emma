@@ -22,7 +22,6 @@ func _on_body_exited(body):
 		joueur_proche = false # Le joueur n'est plus dans la zone
 
 # Fonction appelée à chaque image du jeu
-# delta = temps écoulé depuis l'image précédente
 func _process(delta):
 
 # vérifie 2 conditions : si on est dans l'Area3D et qu'on appuie sur E (interact)
