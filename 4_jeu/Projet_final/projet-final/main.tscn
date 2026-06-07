@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://brys2yeqadfyt" path="res://neurone.tscn" id="6_272bh"]
 [ext_resource type="PackedScene" uid="uid://iopx2ro8tdua" path="res://quiz.tscn" id="7_5vw27"]
 [ext_resource type="PackedScene" uid="uid://wc1v6xirj0o1" path="res://transition_histoire.tscn" id="8_5vw27"]
+[ext_resource type="VideoStream" uid="uid://ukp0womuo33u" path="res://addons/AnimationFinale/OGV_dream9.ogv" id="9_kek77"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_0xm2m"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -36,7 +37,7 @@ shadow_enabled = true
 environment = SubResource("Environment_1bvp3")
 
 [node name="Player" parent="." unique_id=2021529420 instance=ExtResource("2_h2yge")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.151142, 0.8924408, 42.522358)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.076118, 2.2445278, -116.11957)
 
 [node name="DataCenter" parent="." unique_id=683001788 instance=ExtResource("1_0xm2m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10746539, 0, -1.2144728)
@@ -72,4 +73,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152.27852, 4.2804832, 32.2913
 [node name="TransitionHistoire" parent="labyrinthe" unique_id=943188433 instance=ExtResource("8_5vw27")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -63.00898, 0.36442566, -52.08223)
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=389844627]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1811656339]
+
+[node name="AnimationFinale" type="VideoStreamPlayer" parent="CanvasLayer" unique_id=316127351]
+offset_right = 3840.0
+offset_bottom = 2160.0
+stream = ExtResource("9_kek77")
