@@ -1,29 +1,31 @@
 # Pour la téléportation : voir tuto "Godot Quick Tip - Teleporting" de MThelen
+# Attaché au player
 extends CharacterBody3D
 
 # réglages
-const SPEED := 5.0
-const JUMP_VELOCITY := 4.5
-const MOUSE_SENSIBILITY := 0.002
+const SPEED := 5.0 # vitesse du joueur
+const JUMP_VELOCITY := 4.5 # force de saut
+const MOUSE_SENSIBILITY := 0.002 # sensibilité de la souris -> pour quand on bouge la caméra
 
 # gravité
+# Récupère automatiquement la gravité définie dans les paramètres du projet
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
-# ...
+# Récupère le nœud PivotCamera lorsque la scène est prête
 @onready var pivot_camera = $PivotCamera
+# Récupère la caméra qui est enfant du PivotCamera
 @onready var camera = $PivotCamera/Camera3D
 
-var rotation_x := 0.0 # rotation camera
+var rotation_x := 0.0 # rotation verticale de la camera
 
 func _ready():
 	
 	print("READY") # test
 	
-	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED) # capture la souris dans la fenêtre
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED) # capture la souris dans la fenêtre + curseur devient invisible
 	
+	# Lance l'animation FadeIn au démarrage
 	$CanvasLayer/FadeAnimationPlayer.play("FadeIn")
-
-
 
 
 
@@ -33,11 +35,17 @@ func _input(event):
 	
 	if event is InputEventMouseMotion: # mouvement souris
 		print("MOUSE") # test souris
+		
+		# Rotation horizontale du joueur.
+		# Axe Y = tourner à gauche/droite.
 		rotate_y(-event.relative.x * MOUSE_SENSIBILITY)
 		
+		# Rotation verticale de la caméra
 		rotation_x -= event.relative.y * MOUSE_SENSIBILITY
+		# Limite la rotation pour éviter de regarder complètement derrière soi
 		rotation_x = clamp(rotation_x, deg_to_rad(-80), deg_to_rad(80))
 		
+		# Applique la rotation verticale
 		pivot_camera.rotation.x = rotation_x
 	
 	if event.is_action_pressed("ui_cancel"): # Echap = libérer la souris
@@ -48,34 +56,44 @@ func _physics_process(delta):
 	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
 		print("clic") # test
 	
-
+# Si le joueur n'est pas au sol, on applique la gravité
 	if not is_on_floor():
 		velocity.y -= gravity * delta
 
+	# Si la touche saut est pressée et que le joueur est au sol
 	if Input.is_action_just_pressed("jump") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
+		velocity.y = JUMP_VELOCITY 		# On donne une vitesse verticale positive
 
 	var input_dir = Vector2.ZERO
 
+	# droite - gauche
 	input_dir.x = Input.get_action_strength("move_right") - Input.get_action_strength("move_left")
+	# avant - arrière
 	input_dir.y = Input.get_action_strength("move_forward") - Input.get_action_strength("move_backward")
 
+# Direction finale du déplacement
 	var direction = Vector3.ZERO
 
+	# Si une touche de déplacement est appuyée
 	if input_dir != Vector2.ZERO:
 
+		# Normalise pour éviter d'aller plus vite en diagonale
 		input_dir = input_dir.normalized()
 
+		# Direction devant le joueur
 		var forward = -transform.basis.z
+		# Direction droite du joueur
 		var right = transform.basis.x
 
+		# Calcule la direction de déplacement en fonction de l'orientation du joueur
 		direction = (forward * input_dir.y + right * input_dir.x).normalized()
 
+		# Applique la vitesse sur l'axe x et z
 		velocity.x = direction.x * SPEED
 		velocity.z = direction.z * SPEED
 
 	else:
-
+# Ne bouge pas si aucune touche n'est pressée
 		velocity.x = 0
 		velocity.z = 0
 
@@ -108,6 +126,7 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("teleport8"):
 		teleport8_to("TeleportPoint8")	
 
+	# Déplace réellement le personnage en utilisant velocity
 	move_and_slide()
 
 func teleport_to(TeleportPoint1):
