@@ -34,6 +34,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.12164807, 0)
 current = true
 
-[node name="CanvasLayer" parent="." instance=ExtResource("2_fade")]
-unique_id=101010101
-
+[node name="CanvasLayer" parent="." unique_id=1784179033 instance=ExtResource("2_fade")]

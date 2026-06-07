@@ -16,6 +16,9 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 var rotation_x := 0.0 # rotation camera
 
 func _ready():
+	
+	print("READY") # test
+	
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED) # capture la souris dans la fenêtre
 	
 	$CanvasLayer/FadeAnimationPlayer.play("FadeIn")
@@ -25,8 +28,11 @@ func _ready():
 
 
 	
-func _unhandled_input(event):
+func _input(event):
+	print(event)
+	
 	if event is InputEventMouseMotion: # mouvement souris
+		print("MOUSE") # test souris
 		rotate_y(-event.relative.x * MOUSE_SENSIBILITY)
 		
 		rotation_x -= event.relative.y * MOUSE_SENSIBILITY
@@ -38,6 +44,10 @@ func _unhandled_input(event):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
  
 func _physics_process(delta):
+	
+	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
+		print("clic") # test
+	
 
 	if not is_on_floor():
 		velocity.y -= gravity * delta
