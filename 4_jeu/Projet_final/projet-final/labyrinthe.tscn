@@ -247,5 +247,5 @@ size = Vector3(3.1434479, 7.46875, 0.40344238)
 
 [node name="Label3D" type="Label3D" parent="." unique_id=1446659600]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.200901, 7.5933676, 15.160164)
-text = "Trouvez la sortie"
+text = "Trouvez la fin"
 font_size = 100
