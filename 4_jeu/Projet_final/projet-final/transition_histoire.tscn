@@ -147,8 +147,7 @@ size = Vector3(3.5, 1, 0.1)
 [node name="Label3D6" type="Label3D" parent="." unique_id=1582947463]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 3.647)
 text = "\"Certains GPU ont dû être touchés par l'espion. 
-Je doit voir s'il a laissé traces,
-des données par exemple\""
+Je doit voir s'il a laissé quelque chose derrière lui\""
 
 [node name="Fond" type="CSGBox3D" parent="Label3D6" unique_id=392212500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.018798828, 0, -0.07513809)
