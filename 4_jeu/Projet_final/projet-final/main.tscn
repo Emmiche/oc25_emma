@@ -4,6 +4,10 @@
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller2/Player.tscn" id="2_h2yge"]
 [ext_resource type="PackedScene" uid="uid://bwfdlp85pb0ep" path="res://serveur.tscn" id="3_h2yge"]
 [ext_resource type="PackedScene" uid="uid://bj75ufv15apfn" path="res://labyrinthe.tscn" id="4_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://dvrrmmj0ggotw" path="res://plateforme.tscn" id="5_lquwl"]
+[ext_resource type="PackedScene" uid="uid://brys2yeqadfyt" path="res://neurone.tscn" id="6_272bh"]
+[ext_resource type="PackedScene" uid="uid://iopx2ro8tdua" path="res://quiz.tscn" id="7_5vw27"]
+[ext_resource type="PackedScene" uid="uid://wc1v6xirj0o1" path="res://transition_histoire.tscn" id="8_5vw27"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_0xm2m"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -18,6 +22,9 @@ sky = SubResource("Sky_h2yge")
 tonemap_mode = 2
 glow_enabled = true
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_1bvp3"]
+size = Vector3(2.5835571, 3.88208, 1.3322754)
+
 [node name="Main" type="Node3D" unique_id=1167459699]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 20.587978, 0)
 
@@ -28,7 +35,7 @@ shadow_enabled = true
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=494163163]
 environment = SubResource("Environment_1bvp3")
 
-[node name="ProtoController" parent="." unique_id=2021529420 instance=ExtResource("2_h2yge")]
+[node name="Player" parent="." unique_id=2021529420 instance=ExtResource("2_h2yge")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.151142, 0.8924408, 42.522358)
 
 [node name="DataCenter" parent="." unique_id=683001788 instance=ExtResource("1_0xm2m")]
@@ -38,10 +45,29 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10746539, 0, -1.2144728)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.969313, 1.7499924, 10.215578)
 
 [node name="TeleportPoint1" type="Node3D" parent="." unique_id=26036466]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 53.663055, 9.306982, 27.350443)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.613964, 1.9873352, -26.631062)
 
 [node name="TeleportPoint2" type="Node3D" parent="." unique_id=1130426751]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.41531, 2, 38.75182)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44.709023, 2, 40.16028)
 
 [node name="labyrinthe" parent="." unique_id=628365901 instance=ExtResource("4_1bvp3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.3028, 5.3167686, 3.4701228)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.3028, -0.9971924, 3.4701228)
+
+[node name="FinLabyrinthe" type="Area3D" parent="labyrinthe" unique_id=1015249873]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.923962, -3.3456097, -0.552197)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="labyrinthe/FinLabyrinthe" unique_id=1500708800]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.19595337, -2.3363094, 0.013305664)
+shape = SubResource("BoxShape3D_1bvp3")
+
+[node name="GPU1" parent="labyrinthe" unique_id=146931932 instance=ExtResource("5_lquwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 67.76222, 1.9363747, 32.26842)
+
+[node name="Neurone" parent="labyrinthe" unique_id=1044392086 instance=ExtResource("6_272bh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -64.85387, 1.9626961, -97.079506)
+
+[node name="quiz" parent="labyrinthe" unique_id=1284955669 instance=ExtResource("7_5vw27")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152.27852, 4.2804832, 32.291344)
+
+[node name="TransitionHistoire" parent="labyrinthe" unique_id=943188433 instance=ExtResource("8_5vw27")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -63.00898, 0.36442566, -52.08223)
